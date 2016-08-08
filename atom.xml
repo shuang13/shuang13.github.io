@@ -86,9 +86,9 @@ p::after
     <link href="http://shuang13.coding.me/2016/08/08/css%E5%AD%A6%E4%B9%A0/"/>
     <id>http://shuang13.coding.me/2016/08/08/css学习/</id>
     <published>2016-08-08T12:34:14.000Z</published>
-    <updated>2016-08-08T16:49:29.580Z</updated>
+    <updated>2016-08-08T16:55:12.139Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;CSS的基础学习&quot;&gt;&lt;a href=&quot;#CSS的基础学习&quot; class=&quot;headerlink&quot; title=&quot;CSS的基础学习&quot;&gt;&lt;/a&gt;CSS的基础学习&lt;/h1&gt;&lt;h2 id=&quot;前文&quot;&gt;&lt;a href=&quot;#前文&quot; class=&quot;headerlink&quot; title=&quot;前文&quot;&gt;&lt;/a&gt;前文&lt;/h2&gt;&lt;p&gt;css包含许多东西，自己也知道在css方面基础不够扎实，本周的学习我计划从几个我自认为不足的方面进行学习，在css的基本语法方面我就不进行过多的学习了。然后在学习中的例子，保证自己亲手把代码打出来，不要只是复制粘贴，希望以此能记得牢一些。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;前文&quot;&gt;&lt;a href=&quot;#前文&quot; class=&quot;headerlink&quot; title=&quot;前文&quot;&gt;&lt;/a&gt;前文&lt;/h2&gt;&lt;p&gt;css包含许多东西，自己也知道在css方面基础不够扎实，本周的学习我计划从几个我自认为不足的方面进行学习，在css的基本语法方面我就不进行过多的学习了。然后在学习中的例子，保证自己亲手把代码打出来，不要只是复制粘贴，希望以此能记得牢一些。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;CSS的命名与书写规范&quot;&gt;&lt;a href=&quot;#CSS的命名与书写规范&quot; class=&quot;headerlink&quot; title=&quot;CSS的命名与书写规范&quot;&gt;&lt;/a&gt;CSS的命名与书写规范&lt;/h2&gt;&lt;p&gt;我觉得在写网页的时候，书写规范是十分重要的，既能保证自己的清晰思路，也能让别人更好的看懂你的代码。但我对这方面也没重视过，当回去看自己原来的代码时，才发现有多么的头疼。所以自己总结了一下：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;css类在命名的时候应该全用小写加中划线“-” 的方式，并分清父类与子类，让层次更加清晰&lt;/li&gt;
@@ -513,7 +513,7 @@ margin:10px;
     
     <summary type="html">
     
-      &lt;h1 id=&quot;CSS的基础学习&quot;&gt;&lt;a href=&quot;#CSS的基础学习&quot; class=&quot;headerlink&quot; title=&quot;CSS的基础学习&quot;&gt;&lt;/a&gt;CSS的基础学习&lt;/h1&gt;&lt;h2 id=&quot;前文&quot;&gt;&lt;a href=&quot;#前文&quot; class=&quot;headerlink&quot; title=&quot;前文&quot;&gt;&lt;/a&gt;前文&lt;/h2&gt;&lt;p&gt;css包含许多东西，自己也知道在css方面基础不够扎实，本周的学习我计划从几个我自认为不足的方面进行学习，在css的基本语法方面我就不进行过多的学习了。然后在学习中的例子，保证自己亲手把代码打出来，不要只是复制粘贴，希望以此能记得牢一些。&lt;br&gt;
+      &lt;h2 id=&quot;前文&quot;&gt;&lt;a href=&quot;#前文&quot; class=&quot;headerlink&quot; title=&quot;前文&quot;&gt;&lt;/a&gt;前文&lt;/h2&gt;&lt;p&gt;css包含许多东西，自己也知道在css方面基础不够扎实，本周的学习我计划从几个我自认为不足的方面进行学习，在css的基本语法方面我就不进行过多的学习了。然后在学习中的例子，保证自己亲手把代码打出来，不要只是复制粘贴，希望以此能记得牢一些。&lt;br&gt;
     
     </summary>
     
