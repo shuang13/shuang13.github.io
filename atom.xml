@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shuang13.coding.me/"/>
-  <updated>2016-08-08T14:51:22.894Z</updated>
+  <updated>2016-08-08T14:53:31.127Z</updated>
   <id>http://shuang13.coding.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://shuang13.coding.me/2016/08/08/html5-study/"/>
     <id>http://shuang13.coding.me/2016/08/08/html5-study/</id>
     <published>2016-08-08T14:50:47.000Z</published>
-    <updated>2016-08-08T14:51:22.894Z</updated>
+    <updated>2016-08-08T14:53:31.127Z</updated>
     
     <content type="html">&lt;h1 id=&quot;HTML5新特性&quot;&gt;&lt;a href=&quot;#HTML5新特性&quot; class=&quot;headerlink&quot; title=&quot;HTML5新特性&quot;&gt;&lt;/a&gt;HTML5新特性&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;新的特殊内容元素&lt;/li&gt;
@@ -31,7 +31,7 @@
 &lt;li&gt;拖拽释放(Drag and drop) API&lt;/li&gt;
 &lt;li&gt;网页存储(Web storage) API&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;ps&lt;/strong&gt;:html5标签的例子已经在第一次作业熟悉过了，就不在过多的重复了&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ps&lt;/strong&gt;:html5标签的例子已经在第一次作业熟悉过了，就不在过多的重复了&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;新的特殊内容元素&quot;&gt;&lt;a href=&quot;#新的特殊内容元素&quot; class=&quot;headerlink&quot; title=&quot;新的特殊内容元素&quot;&gt;&lt;/a&gt;新的特殊内容元素&lt;/h2&gt;&lt;p&gt;在HTML4中的内容标签级别相同，只能用class类名来区分各个模块的语义。而HTML5中的比如 article、footer、header、nav、section等内容标签级别不同，可便于搜索引擎快速识别。&lt;br&gt;&lt;img src=&quot;http://img.yixieshi.com/uploads/allimg/111128/011AT245-1.jpg?sign=MBO%3AxSCczKp2MjuZ%3AuHDSfo6cZn9Z6c6vbaJX1h%2Fdb8E%3D&amp;amp;imageView2/2/w/558/h/246&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;这张图就让我很快明白了这个意思。&lt;/p&gt;
 &lt;h2 id=&quot;新的表单控件&quot;&gt;&lt;a href=&quot;#新的表单控件&quot; class=&quot;headerlink&quot; title=&quot;新的表单控件&quot;&gt;&lt;/a&gt;新的表单控件&lt;/h2&gt;&lt;p&gt;HTML5 拥有多个新的表单输入类型。主要是控制input表单的type类型里的值。&lt;/p&gt;
@@ -344,7 +344,13 @@ src: url(&amp;apos;Sansation_Light.ttf&amp;apos;),
       &lt;h1 id=&quot;HTML5新特性&quot;&gt;&lt;a href=&quot;#HTML5新特性&quot; class=&quot;headerlink&quot; title=&quot;HTML5新特性&quot;&gt;&lt;/a&gt;HTML5新特性&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;新的特殊内容元素&lt;/li&gt;
 &lt;li&gt;新的表单控件&lt;/li&gt;
-&lt;li&gt;音频、视频A
+&lt;li&gt;音频、视频API&lt;/li&gt;
+&lt;li&gt;画布(Canvas) API&lt;/li&gt;
+&lt;li&gt;地理(Geolocation) API&lt;/li&gt;
+&lt;li&gt;拖拽释放(Drag and drop) API&lt;/li&gt;
+&lt;li&gt;网页存储(Web storage) API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ps&lt;/strong&gt;:html5标签的例子已经在第一次作业熟悉过了，就不在过多的重复了&lt;br&gt;
     
     </summary>
     
