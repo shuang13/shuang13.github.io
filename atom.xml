@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shuang13.coding.me/"/>
-  <updated>2016-06-16T10:37:33.799Z</updated>
+  <updated>2016-08-08T12:35:01.058Z</updated>
   <id>http://shuang13.coding.me/</id>
   
   <author>
@@ -14,6 +14,439 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css3 study</title>
+    <link href="http://shuang13.coding.me/2016/08/08/css3-study/"/>
+    <id>http://shuang13.coding.me/2016/08/08/css3-study/</id>
+    <published>2016-08-08T12:34:14.000Z</published>
+    <updated>2016-08-08T12:35:01.058Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;CSS的基础学习&quot;&gt;&lt;a href=&quot;#CSS的基础学习&quot; class=&quot;headerlink&quot; title=&quot;CSS的基础学习&quot;&gt;&lt;/a&gt;CSS的基础学习&lt;/h1&gt;&lt;h2 id=&quot;前文&quot;&gt;&lt;a href=&quot;#前文&quot; class=&quot;headerlink&quot; title=&quot;前文&quot;&gt;&lt;/a&gt;前文&lt;/h2&gt;&lt;p&gt;css包含许多东西，自己也知道在css方面基础不够扎实，本周的学习我计划从几个我自认为不足的方面进行学习，在css的基本语法方面我就不进行过多的学习了。然后在学习中的例子，保证自己亲手把代码打出来，不要只是复制粘贴，希望以此能记得牢一些。&lt;/p&gt;
+&lt;h2 id=&quot;CSS的命名与书写规范&quot;&gt;&lt;a href=&quot;#CSS的命名与书写规范&quot; class=&quot;headerlink&quot; title=&quot;CSS的命名与书写规范&quot;&gt;&lt;/a&gt;CSS的命名与书写规范&lt;/h2&gt;&lt;p&gt;我觉得在写网页的时候，书写规范是十分重要的，既能保证自己的清晰思路，也能让别人更好的看懂你的代码。但我对这方面也没重视过，当回去看自己原来的代码时，才发现有多么的头疼。所以自己总结了一下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;css类在命名的时候应该全用小写加中划线“-” 的方式，并分清父类与子类，让层次更加清晰&lt;/li&gt;
+&lt;li&gt;尽量用英文来概括你这一部分代码样式的含义，也有利于多学几个英文单词&lt;/li&gt;
+&lt;li&gt;然后避免class与id的重名，在js中id的命名十分重要，如果与class重名以后其实本身不会发生什么问题，主要怕搞混&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;CSS书写先后顺序&quot;&gt;&lt;a href=&quot;#CSS书写先后顺序&quot; class=&quot;headerlink&quot; title=&quot;CSS书写先后顺序&quot;&gt;&lt;/a&gt;CSS书写先后顺序&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;位置属性:    &lt;ul&gt;
+&lt;li&gt;display&lt;/li&gt;
+&lt;li&gt;position&lt;/li&gt;
+&lt;li&gt;top、right、bottom、left(顺时针)&lt;/li&gt;
+&lt;li&gt;float&lt;/li&gt;
+&lt;li&gt;clear&lt;/li&gt;
+&lt;li&gt;z-index …&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;盒模型:&lt;ul&gt;
+&lt;li&gt;margin&lt;/li&gt;
+&lt;li&gt;padding&lt;/li&gt;
+&lt;li&gt;width&lt;/li&gt;
+&lt;li&gt;height …&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;文字等排版:&lt;ul&gt;
+&lt;li&gt;color&lt;/li&gt;
+&lt;li&gt;font&lt;/li&gt;
+&lt;li&gt;content&lt;/li&gt;
+&lt;li&gt;border&lt;/li&gt;
+&lt;li&gt;background&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;选择器&quot;&gt;&lt;a href=&quot;#选择器&quot; class=&quot;headerlink&quot; title=&quot;选择器&quot;&gt;&lt;/a&gt;选择器&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;常用选择器：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;类选择器 .class &lt;/p&gt;
+&lt;p&gt;  &lt;code&gt;.word {color:red;}&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;style&amp;gt;
+.word {color:red;}
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div class=&amp;quot;word&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;类选择器类选择器&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;  &lt;pre&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;.word {color:red;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;word&quot;&gt;&lt;p&gt;类选择器类选择器&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;id选择器 #id&lt;/p&gt;
+&lt;p&gt;  &lt;code&gt;#word {color:red;}&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;style&amp;gt;
+#word {color:red;}
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div id=&amp;quot;word&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;id选择器id选择器&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;  &lt;pre&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;#word {color:red;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div id=&quot;word&quot;&gt;&lt;p&gt;id选择器id选择器&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;通配符 *&lt;/p&gt;
+&lt;p&gt;  &lt;code&gt;* {margin:0; padding:0;}&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;元素选择器 element&lt;/p&gt;
+&lt;p&gt;  &lt;code&gt;p {color:red;}&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;属性选择器 [attribute]&lt;/p&gt;
+  &lt;pre&gt;&lt;--选择带有target属性的a标签 a[target]{=&quot;&quot; background-color:yellow;=&quot;&quot; }&lt;=&quot;&quot; pre=&quot;&quot;&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;style&gt;
+      a[target]{
+      background-color:yellow;
+      }
+      &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      &lt;div&gt;
+      &lt;a target=&quot;##&quot;&gt;属性选择器属性选择器&lt;/a&gt;&lt;br&gt;
+      &lt;a&gt;没有target没有target&lt;/a&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;
+      
+      &lt;/body&gt;
+      &lt;/html&gt;
+
+  &lt;pre&gt;&lt;html&gt;
+  &lt;head&gt;&lt;style&gt;a[target]{background-color:yellow;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div&gt;&lt;a target=&quot;_blank&quot;&gt;属性选择器属性选择器&lt;/a&gt;&lt;br&gt;&lt;a&gt;没有target没有target&lt;/a&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;&lt;/--选择带有target属性的a标签&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;伪类选择器 name:伪类&lt;br&gt;  &lt;br&gt;伪类有许多常见的有：hover,:after,:before,:first-child,:last-child等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;组合选择器&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;群组选择器 name1,name2&lt;/li&gt;
+&lt;li&gt;后代选择器 name1 name2&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;相邻兄弟选择器 name1 + name2&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;style&amp;gt;
+.name1+p
+{
+background-color:yellow;
+}
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div class=&amp;quot;name1&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;相邻兄弟选择器&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;相邻兄弟选择器&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;p&amp;gt;相邻兄弟选择器&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;  &lt;pre&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;.name1+p{background-color:yellow;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;name1&quot;&gt;&lt;p&gt;相邻兄弟选择器&lt;/p&gt;&lt;p&gt;相邻兄弟选择器&lt;/p&gt;&lt;/div&gt;&lt;p&gt;相邻兄弟选择器&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;子代选择器 name1 &amp;gt; name2&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;style&amp;gt;
+.name2 &amp;gt; p
+{
+background-color:yellow;
+}
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div class=&amp;quot;name2&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;子代选择器&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;子代选择器&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;p&amp;gt;其他段落&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  &lt;pre&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;.name2 &amp;gt; p{background-color:yellow;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;name2&quot;&gt;&lt;p&gt;子代选择器&lt;/p&gt;&lt;p&gt;子代选择器&lt;/p&gt;&lt;/div&gt;&lt;p&gt;其他段落&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;h4 id=&quot;子代选择器与后代选择器的区别&quot;&gt;&lt;a href=&quot;#子代选择器与后代选择器的区别&quot; class=&quot;headerlink&quot; title=&quot;子代选择器与后代选择器的区别&quot;&gt;&lt;/a&gt;子代选择器与后代选择器的区别&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;子代选择器只对子代有用，而后代选择器不仅对子代对孙代，曾孙代都有用。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;优先级&quot;&gt;&lt;a href=&quot;#优先级&quot; class=&quot;headerlink&quot; title=&quot;优先级&quot;&gt;&lt;/a&gt;优先级&lt;/h2&gt;&lt;p&gt;CSS的优先级也是一个很容易忽视的基础点，我对这方面也没仔细学过，所以就像加减乘法的优先级一样，必须牢记这些优先级。&lt;/p&gt;
+&lt;h3 id=&quot;CSS优先级&quot;&gt;&lt;a href=&quot;#CSS优先级&quot; class=&quot;headerlink&quot; title=&quot;CSS优先级&quot;&gt;&lt;/a&gt;CSS优先级&lt;/h3&gt;&lt;p&gt;如果从高到低的顺序排列的话：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;在属性后面加！important。它相当于最高命令，会覆盖所有样式。&lt;/p&gt;
+&lt;p&gt; box{color:red !important;}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;老二是直接在html标签中添加style属性，也就是内联样式。&lt;/p&gt;
+&lt;p&gt; &lt;code&gt;&amp;lt;p style=&amp;quot;color: red; margin-left: 20px&amp;quot;&amp;gt;This is a paragraph&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;第三级优先的属性是由一个或多个id选择器来定义的。例如 #id{margin:0;} 会覆盖 .classname{margin:10px;}。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;style&amp;gt;
+#idname
+{
+background-color:yellow;
+}
+.classname
+{
+background-color:red;
+}
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div id=&amp;quot;idname&amp;quot; class=&amp;quot;classname&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;子代选择器&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;子代选择器&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;p&amp;gt;其他段落&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt; &lt;pre&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;#idname{background-color:yellow;}.classname{background-color:red;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div id=&quot;idname&quot; class=&quot;classname&quot;&gt;&lt;p&gt;子代选择器&lt;/p&gt;&lt;p&gt;子代选择器&lt;/p&gt;&lt;/div&gt;&lt;p&gt;其他段落&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;第四优先级是由一个或多个 类选择器、属性选择器、伪类选择器定义.如 .classname{margin:3px;} 会覆盖 div{margin:6px;}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;第五级由一个或多个 类型选择器定义。如 div{margin:6px;}  覆盖  *{margin:10px;} 。&lt;/li&gt;
+&lt;li&gt;所以通配选择器就是最低的一级了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;平时还会遇到多个相同级别的CSS选择器优先级，这个时候就要从位置上来分级了：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;位于head标签里的style中所定义的CSS拥有最高级的优先权。也就是&lt;strong&gt;内部样式表&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;第二级的优先属性由位于 style标签中的 @import 引入样式表所&lt;br&gt;定义。&lt;/p&gt;
+&lt;p&gt; @import语法结构&lt;br&gt; @import + 空格+ url(CSS文件路径地址);&lt;br&gt; 在html和css文件中均可使用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;第三级的优先属性由link标签所引入的样式表定义。也就是&lt;strong&gt;外部样式表&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;第四级的优先属性由link标签所引入的样式表内的 @import 导入样式表定义。&lt;/li&gt;
+&lt;li&gt;第五级优先的样式有用户设定。&lt;/li&gt;
+&lt;li&gt;最低级的优先权由浏览器默认。&lt;/li&gt;
+&lt;li&gt;如果是同一个选择器，同一个属性，是从前到后，后面的会覆盖前面的样式。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;CSS页面呈现&quot;&gt;&lt;a href=&quot;#CSS页面呈现&quot; class=&quot;headerlink&quot; title=&quot;CSS页面呈现&quot;&gt;&lt;/a&gt;CSS页面呈现&lt;/h2&gt;&lt;p&gt;这段时间我主要看的是《CSS权威指南》且自己边学边查阅了一些资料，终于稍微理清了自己的css知识框架。如今已经知道css要与html结合，就是通过以上所说的选择器，选择器最重要的就是级别。下一步，就是网页是如何呈现出来的了。&lt;/p&gt;
+&lt;p&gt;页面呈现可以分为两类：1 文字；2 块&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;文字包括设置字体、字号、样式、颜色、对齐方式等&lt;/li&gt;
+&lt;li&gt;而块就大概包括：普通流、盒子模型、浮动、定位position、显示display等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;首先需要知道的就是在css中，html标签元素要分为块级元素、行内元素、内联块状元素。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;块级元素 display:block&lt;/p&gt;
+&lt;p&gt;  &lt;code&gt;&amp;lt;div&amp;gt;、&amp;lt;p&amp;gt;、&amp;lt;h1&amp;gt;...&amp;lt;h6&amp;gt;、&amp;lt;ol&amp;gt;、&amp;lt;ul&amp;gt;、&amp;lt;dl&amp;gt;、&amp;lt;table&amp;gt;、&amp;lt;address&amp;gt;、&amp;lt;blockquote&amp;gt; 、&amp;lt;form&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;行内元素 display:inline&lt;/p&gt;
+&lt;p&gt;  &lt;code&gt;&amp;lt;a&amp;gt;、&amp;lt;span&amp;gt;、&amp;lt;br&amp;gt;、&amp;lt;i&amp;gt;、&amp;lt;em&amp;gt;、&amp;lt;strong&amp;gt;、&amp;lt;label&amp;gt;、&amp;lt;q&amp;gt;、&amp;lt;var&amp;gt;、&amp;lt;cite&amp;gt;、&amp;lt;code&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;内联块状元素 display:inline-block&lt;/p&gt;
+&lt;p&gt;  &lt;code&gt;&amp;lt;img&amp;gt;、&amp;lt;input&amp;gt;&amp;lt;button&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上是浏览器默认的元素是行内还是块级元素，顾名思义行内元素就是在网页文本中在一行中挨着排下去，而块级元素就相当于一个大块头老大，一个人独占一行。内联块级元素虽然块头很大，但内心跟行内元素是一样的愿意在一行中与大家一起挤着。当然我们就可以通过设置display属性来改变元素所在的位置了。&lt;/p&gt;
+&lt;p&gt;且块级元素宽度(width)、高度(height)、内边距(padding)和外边距(margin)都可控制，而行内元素不行。&lt;/p&gt;
+&lt;h2 id=&quot;盒模型&quot;&gt;&lt;a href=&quot;#盒模型&quot; class=&quot;headerlink&quot; title=&quot;盒模型&quot;&gt;&lt;/a&gt;盒模型&lt;/h2&gt;&lt;p&gt;盒模型其实就是内边距padding、边框border、外边距margin，他们三者就构成了一个“盒子”,盒子里装着你想放的元素，其中边框就是内边距和外边距的分界线。盒模型是很基础的东西，但发现盒子模型不仅仅是margin，padding和border，其实还有其他的知识。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;style&amp;gt;
+#box1
+{
+width: 200px;
+border:1px solid #000;
+background-color:yellow;
+}
+#box2{
+  margin: 10px;
+ padding: 5px;
+border:10px solid #fff;
+background-color:red;
+}
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div id=&amp;quot;box1&amp;quot;&amp;gt;&amp;lt;div id=&amp;quot;box2&amp;quot;&amp;gt;外边距距离父级元素10px;内边距距离内部元素5px;边框厚度10px;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;html&gt;&lt;br&gt;        &lt;head&gt;&lt;br&gt;        &lt;style&gt;&lt;br&gt;        #box1&lt;br&gt;        {&lt;br&gt;        width: 200px;&lt;br&gt;        border:1px solid #000;&lt;br&gt;        background-color:yellow;&lt;br&gt;        }&lt;br&gt;        #box2{&lt;br&gt;          margin: 10px;&lt;br&gt;         padding: 5px;&lt;br&gt;        border:10px solid #000;&lt;br&gt;        background-color:red;&lt;br&gt;        }&lt;br&gt;        &lt;/style&gt;&lt;br&gt;        &lt;/head&gt;&lt;br&gt;        &lt;body&gt;&lt;br&gt;        &lt;div id=&quot;box1&quot;&gt;&lt;div id=&quot;box2&quot;&gt;外边距距离父级元素10px;内边距距离内部元素5px;边框厚度10px;&lt;/div&gt;&lt;br&gt;        &lt;/div&gt;&lt;br&gt;        &lt;/body&gt;&lt;br&gt;        &lt;/html&gt;
+
+&lt;p&gt;当我们为这个盒子设置宽度的时候，width的值是盒子内容的宽度，而不是整个盒子的大小，整个盒子的大小是margin+padding+border+width，其中有一项改变了，整个盒子的大小就改变了。当我们设置box-sizing:border-box的时，盒子的大小就不包括margin了，而是boder的外边界的大小。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;style&amp;gt;
+#box5
+{
+width: 200px;
+border:1px solid #000;
+background-color:yellow;
+}
+#box6{
+width:100px;
+  margin: 10px;
+ padding: 5px;
+border:10px solid #fff;
+background-color:red;
+box-sizing:border-box;
+}
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div id=&amp;quot;box3&amp;quot;&amp;gt;&amp;lt;div id=&amp;quot;box4&amp;quot;&amp;gt;文本内容100px&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;html&gt;&lt;br&gt;        &lt;head&gt;&lt;br&gt;        &lt;style&gt;&lt;br&gt;        #box3&lt;br&gt;        {&lt;br&gt;        width: 200px;&lt;br&gt;        border:1px solid #000;&lt;br&gt;        background-color:yellow;&lt;br&gt;        }&lt;br&gt;        #box4{&lt;br&gt;        width:100px;&lt;br&gt;          margin: 10px;&lt;br&gt;         padding: 5px;&lt;br&gt;        border:10px solid #fff;&lt;br&gt;        background-color:red;&lt;br&gt;        }&lt;br&gt;        &lt;/style&gt;&lt;br&gt;        &lt;/head&gt;&lt;br&gt;        &lt;body&gt;&lt;br&gt;        &lt;div id=&quot;box3&quot;&gt;&lt;div id=&quot;box4&quot;&gt;文本内容100px&lt;/div&gt;&lt;br&gt;        &lt;/div&gt;&lt;br&gt;        &lt;/body&gt;&lt;br&gt;        &lt;/html&gt;
+
+&lt;html&gt;&lt;br&gt;        &lt;head&gt;&lt;br&gt;        &lt;style&gt;&lt;br&gt;        #box5&lt;br&gt;        {&lt;br&gt;        width: 200px;&lt;br&gt;        border:1px solid #000;&lt;br&gt;        background-color:yellow;&lt;br&gt;        }&lt;br&gt;        #box6{&lt;br&gt;        width:100px;&lt;br&gt;          margin: 10px;&lt;br&gt;         padding: 5px;&lt;br&gt;        border:10px solid #fff;&lt;br&gt;        background-color:red;&lt;br&gt;        box-sizing:border-box;&lt;br&gt;        }&lt;br&gt;        &lt;/style&gt;&lt;br&gt;        &lt;/head&gt;&lt;br&gt;        &lt;body&gt;&lt;br&gt;        &lt;div id=&quot;box5&quot;&gt;&lt;div id=&quot;box6&quot;&gt;不包含margin,文本加padding加边框大小总共为100px&lt;/div&gt;&lt;br&gt;        &lt;/div&gt;&lt;br&gt;        &lt;/body&gt;&lt;br&gt;        &lt;/html&gt;
+
+&lt;p&gt;建议以后写css时候，把box-sizing:border-box;设置好&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;margin–纵向重叠&quot;&gt;&lt;a href=&quot;#margin–纵向重叠&quot; class=&quot;headerlink&quot; title=&quot;margin–纵向重叠&quot;&gt;&lt;/a&gt;margin–纵向重叠&lt;/h4&gt;&lt;p&gt;两个段落之间纵向的距离按常理来说应该是 10 + 10 = 20px，但是实际还是为10px&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;style&amp;gt;
+.prom{
+margin:10px;
+}
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div class=&amp;quot;prom&amp;quot;&amp;gt;123&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;prom&amp;quot;&amp;gt;123&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;prom&amp;quot;&amp;gt;123&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;.prom{margin:10px;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;prom&quot;&gt;123&lt;/div&gt;&lt;div class=&quot;prom&quot;&gt;123&lt;/div&gt;&lt;div class=&quot;prom&quot;&gt;123&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+
+&lt;p&gt;横向的话就不会,把div改为a标签后&lt;/p&gt;
+&lt;pre&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;.prom{margin:10px;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;a class=&quot;prom&quot;&gt;123&lt;/a&gt;&lt;a class=&quot;prom&quot;&gt;123&lt;/a&gt;&lt;a class=&quot;prom&quot;&gt;123&lt;/a&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+
+&lt;p&gt;经过测量123之间为20px&lt;/p&gt;
+&lt;p&gt;且纵向重叠大的会吃掉小的，纵向两元素相隔为当中的最大值&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;max-width:给元素设置最大宽度值&lt;/li&gt;
+&lt;li&gt;min-width:给元素设置最小宽度值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;max-width 会覆盖width设置, 但 min-width设置会覆盖 max-width.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;CSS定位&quot;&gt;&lt;a href=&quot;#CSS定位&quot; class=&quot;headerlink&quot; title=&quot;CSS定位&quot;&gt;&lt;/a&gt;CSS定位&lt;/h2&gt;&lt;p&gt;CSS有三种基本的定位：普通流、 浮动、绝对定位&lt;/p&gt;
+&lt;p&gt;普通流就是浏览器对块级元素、行内元素等默认的排列方式。&lt;/p&gt;
+&lt;h3 id=&quot;浮动&quot;&gt;&lt;a href=&quot;#浮动&quot; class=&quot;headerlink&quot; title=&quot;浮动&quot;&gt;&lt;/a&gt;浮动&lt;/h3&gt;&lt;p&gt;CSS允许任何元素浮动，浮动元素相当于会从正常的文本流中删除。最开始float是用来做文字环绕效果的。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;img src=&amp;quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&amp;quot; style=&amp;quot;width:100px;float:left;&amp;quot; &amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;html&gt;&lt;br&gt;&lt;body&gt;&lt;br&gt;&lt;div&gt;&lt;img src=&quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&quot; style=&quot;width:100px;float:left;&quot;&gt;蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;/body&gt;&lt;br&gt;&lt;/html&gt;
+
+&lt;p&gt;&lt;strong&gt;float主要用于横向排版、或者多列布局，虽然好用，但也有很多问题，比如浮动会造成的父元素高度塌陷。&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div style=&amp;quot;border:1px solid #000;padding:10px;&amp;quot; &amp;gt;&amp;lt;img src=&amp;quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&amp;quot; style=&amp;quot;width:100px;&amp;quot; &amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;html&gt;&lt;body&gt;&lt;div style=&quot;border:1px solid #000;padding:10px;&quot;&gt;&lt;img src=&quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&quot; style=&quot;width:100px;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;加上浮动&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div style=&amp;quot;border:1px solid #000;padding:10px;&amp;quot; &amp;gt;&amp;lt;img src=&amp;quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&amp;quot; style=&amp;quot;width:100px;float:left;&amp;quot; &amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;html&gt;&lt;body&gt;&lt;div style=&quot;border:1px solid #000;padding:10px;&quot;&gt;&lt;img src=&quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&quot; style=&quot;width:100px;float:left;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;加上浮动后，父元素出现了坍塌现象，主要是因为float让元素脱离了文本流。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;当对父级元素加上float后，会出现包裹性。&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div style=&amp;quot;border:1px solid #000;padding:10px;float:left;&amp;quot; &amp;gt;&amp;lt;img src=&amp;quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&amp;quot; style=&amp;quot;width:100px;&amp;quot; &amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;html&gt;&lt;body&gt;&lt;div style=&quot;border:1px solid #000;padding:10px;float:left;&quot;&gt;&lt;img src=&quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&quot; style=&quot;width:100px;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;另外float还具有清空格的作用，如img之间默认会有空格，添加float后就会排布紧密了。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;清除浮动&quot;&gt;&lt;a href=&quot;#清除浮动&quot; class=&quot;headerlink&quot; title=&quot;清除浮动&quot;&gt;&lt;/a&gt;清除浮动&lt;/h3&gt;&lt;p&gt;清除浮动有很多方法，有的博客都列举了8个多，我觉得掌握几个基本的就可以了，其他有些也很麻烦，只做了解。常见的方法先列举几个。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;给父级元素设置浮动&lt;/li&gt;
+&lt;li&gt;给父级元素设置固定高度height&lt;/li&gt;
+&lt;li&gt;给父级元素定义 overflow:hidden&lt;/li&gt;
+&lt;li&gt;浮动元素结尾处加空div标签设置clear:both&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;父级div定义 伪类:after &lt;/p&gt;
+&lt;p&gt; div:after{display:block;clear:both;content:””;visibility:hidden;height:0} &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;现在一般都用给父级元素定义 overflow:hidden来清除浮动，而其他的视情况而定。&lt;/p&gt;
+&lt;h3 id=&quot;定位&quot;&gt;&lt;a href=&quot;#定位&quot; class=&quot;headerlink&quot; title=&quot;定位&quot;&gt;&lt;/a&gt;定位&lt;/h3&gt;&lt;p&gt;定位的关键字就是position了，我们一般的定位除了网页默认的块级元素和行内元素由上到下、由左到右，然后用设置盒子模型的margin，padding来进行基本移动，再加上浮动float来进行横向排版这些方法外，还有一个不能缺少的定位方法就是运用positon。&lt;/p&gt;
+&lt;p&gt;position一共有四个属性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;static默认属性&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;relative&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;relative相对定位，会导致自身位置的相对变化，而不会影响其他元素的位置、大小的变化&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div &amp;gt;123&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;position:relative;top:10px;left:20px;&amp;quot;&amp;gt;123&amp;lt;/div&amp;gt;
+&amp;lt;div &amp;gt;123&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;html&gt;&lt;body&gt;&lt;div&gt;123&lt;/div&gt;&lt;div style=&quot;position:relative;top:10px;left:20px;&quot;&gt;123&lt;/div&gt;&lt;div&gt;123&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;absolute&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;absolute绝对定位，当元素设置absolute之后，就会和float一样脱离普通文本流。且最重要的是absolute的元素对于祖先有absolute或relative的元素进行定位。且absolute一般不跟float同时使用。&lt;/p&gt;
+ &lt;pre&gt;&lt;html&gt;&lt;body&gt;&lt;div&gt;123&lt;/div&gt;&lt;div style=&quot;background-color:yellow;&quot;&gt;123&lt;/div&gt;&lt;div&gt;123&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+
+&lt;p&gt;加上absolute后：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div &amp;gt;123&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;background-color:yellow；position:absolute;&amp;quot;&amp;gt;123&amp;lt;/div&amp;gt;
+&amp;lt;div &amp;gt;123&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt; &lt;pre&gt;&lt;html&gt;&lt;body&gt;&lt;div&gt;123&lt;/div&gt;&lt;div style=&quot;background-color:yellow;position:absolute;left:10px;&quot;&gt;123&lt;/div&gt;&lt;div&gt;123&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里体现了absolute的许多特性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;第一个是具有&lt;strong&gt;包裹性&lt;/strong&gt;之前div的宽度是整个屏幕，之后为文字宽度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;第二个是&lt;strong&gt;跟随性&lt;/strong&gt;，当没有设置left和top的值的时候是这个样子的 &lt;pre&gt;&lt;html&gt;&lt;body&gt;&lt;div&gt;123&lt;/div&gt;&lt;div style=&quot;background-color:yellow;position:absolute;&quot;&gt;123&lt;/div&gt;&lt;div&gt;123&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;他会待在原位，但不占文本流的位置空间。设置left和top后就会根据上下文来进行定位，也就是absolute的元素对于祖先有absolute或relative的元素进行定位。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;那么我们如果把left改为margin-left呢&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;html&gt;&lt;body&gt;&lt;div&gt;123&lt;/div&gt;&lt;div style=&quot;background-color:yellow;position:absolute;margin-left:10px;&quot;&gt;123&lt;/div&gt;&lt;div&gt;123&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+
+&lt;p&gt;这时就会相对原来位置进行移动，可见left和margin-left是有区别的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;fixed&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;fixed和absolute的区别&lt;/p&gt;
+&lt;p&gt;absolute元素是根据最近的定位上下文确定位置，而fixed永远根据浏览器确定位置。而relative元素的定位永远是相对于元素自身位置的。&lt;/p&gt;
+&lt;h2 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h2&gt;&lt;p&gt;本次作业我采用的是用markdown来写博客的形式来学习css,把学习过程中的那些概念自己看几遍，理解后，按照自己的理解在打出来，对于很多基础的东西都有了更深的理解，也记得更牢。虽然这样学习速度很慢，但把学到的东西转换为了自己的东西，还是可以。&lt;/p&gt;
+&lt;p&gt;最后自己学习过程中遇到了几个小知识点，写一下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;b和strong有啥区别？那i和em的区别呢？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;两者都可以加粗，而strong带有强调的意思，b只是单纯的加粗，一般建议用strong,浏览器搜索是也优先级高，一个是物理元素，一个是逻辑元素。同样i和em一样，em比strong更强烈强调&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;display: none和 visibility: hidden 有什么区别?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;none表示没有，就不会占位置空间。&lt;/li&gt;
+&lt;li&gt;hidden表示藏起来了，他还在那，占着位置空间。&lt;/li&gt;
+&lt;li&gt;让元素隐藏还可以设置&lt;ul&gt;
+&lt;li&gt;宽高为0&lt;/li&gt;
+&lt;li&gt;设置透明度为0&lt;/li&gt;
+&lt;li&gt;设置z-index位置在-1000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;src与href的区别&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;src是引入，是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置， img、script、iframe 等元素上使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;href是引用，指向网络资源所在位置，link和a 等元素上使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;CSS的基础学习&quot;&gt;&lt;a href=&quot;#CSS的基础学习&quot; class=&quot;headerlink&quot; title=&quot;CSS的基础学习&quot;&gt;&lt;/a&gt;CSS的基础学习&lt;/h1&gt;&lt;h2 id=&quot;前文&quot;&gt;&lt;a href=&quot;#前文&quot; class=&quot;headerlink&quot; titl
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>croding 博客</title>
