@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>HTML5新特性 | Dye Cream</title>
+  <meta name="author" content="zbb">
+  
+  <meta name="description" content="新的特殊内容元素
+新的表单控件
+音频、视频API
+画布(Canvas) API
+地理(Geolocation) API
+拖拽释放(Drag and drop) API
+网页存储(Web storage) API">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="HTML5新特性"/>
+  <meta property="og:site_name" content="Dye Cream"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="Dye Cream" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Dye Cream</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+  	<li> <a href="/atom.xml">RSS</a> </li>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="//about">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-08-05T14:50:47.000Z"><a href="/2016/08/05/html5新特性/">2016-08-05</a></time>
+      
+      
+  
+    <h1 class="title">HTML5新特性</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        
+        <ul>
+<li>新的特殊内容元素</li>
+<li>新的表单控件</li>
+<li>音频、视频API</li>
+<li>画布(Canvas) API</li>
+<li>地理(Geolocation) API</li>
+<li>拖拽释放(Drag and drop) API</li>
+<li>网页存储(Web storage) API</li>
+</ul>
+<a id="more"></a>
+<h2 id="新的特殊内容元素"><a href="#新的特殊内容元素" class="headerlink" title="新的特殊内容元素"></a>新的特殊内容元素</h2><p>在HTML4中的内容标签级别相同，只能用class类名来区分各个模块的语义。而HTML5中的比如 article、footer、header、nav、section等内容标签级别不同，可便于搜索引擎快速识别。<br><img src="http://img.yixieshi.com/uploads/allimg/111128/011AT245-1.jpg?sign=MBO%3AxSCczKp2MjuZ%3AuHDSfo6cZn9Z6c6vbaJX1h%2Fdb8E%3D&amp;imageView2/2/w/558/h/246" alt=""></p>
+<p>这张图就让我很快明白了这个意思。</p>
+<h2 id="新的表单控件"><a href="#新的表单控件" class="headerlink" title="新的表单控件"></a>新的表单控件</h2><p>HTML5 拥有多个新的表单输入类型。主要是控制input表单的type类型里的值。</p>
+<ul>
+<li><p>Input 类型-email</p>
+<p>  当用户在表单里输入邮箱时，会自动提醒邮箱的格式是否正确，而不需要像以前那样用js或者php来进行表单验证。但这样的话，样式我目前还不到能否进行控制。</p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;form&gt;E-mail: &lt;input type=&quot;email&quot; /&gt;&lt;br /&gt;
+&lt;input type=&quot;submit&quot; /&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>  <pre><!DOCTYPE HTML><html><body><form>E-mail: <input type="email"><br><input type="submit"></form></body></html></pre>
+</li>
+<li><p>Input 类型 - url</p>
+<p>  url是判断输入地址是否为网址。</p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;form&gt;
+url: &lt;input type=&quot;url&quot; /&gt;&lt;br /&gt;
+&lt;input type=&quot;submit&quot; /&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>  <pre><!DOCTYPE HTML><html><body><form>url: <input type="url"><br><input type="submit"></form></body></html></pre>
+</li>
+<li><p>Input 类型 - number</p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;form&gt;
+number: &lt;input type=&quot;number&quot;  min=&quot;-1&quot; max=&quot;10&quot; step=&quot;3&quot; value=&quot;2&quot; /&gt;&lt;br /&gt;
+&lt;input type=&quot;submit&quot; /&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>  <pre><!DOCTYPE HTML><html><body><form>number: <input type="number" min="-1" max="10" step="3" value="2"><br><input type="submit"></form></body></html></pre>
+</li>
+<li><p>Input 类型 - range</p>
+<p>  这是个我认为很神奇的东西，很简单的就实现了如音量控制，进度条的数据传输。</p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;form&gt;
+points: &lt;input type=&quot;range&quot;  min=&quot;1&quot; max=&quot;10&quot; /&gt;&lt;br /&gt;
+&lt;input type=&quot;submit&quot; /&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>  <pre><!DOCTYPE HTML><html><body><form>points: <input type="range" min="1" max="10"><br><input type="submit"></form></body></html></pre>
+</li>
+<li><p>Input 类型 - Date Pickers（日期选择器）</p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;form&gt;
+date: &lt;input type=&quot;date&quot; /&gt;&lt;br /&gt;
+time: &lt;input type=&quot;time&quot; /&gt;&lt;br /&gt;
+datetime-local: &lt;input type=&quot;datetime-local&quot; /&gt;&lt;br /&gt;
+week: &lt;input type=&quot;week&quot; /&gt;&lt;br /&gt;
+&lt;input type=&quot;submit&quot; /&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>  <pre><!DOCTYPE HTML><html><body><form>date: <input type="date"><br>time: <input type="time"><br>datetime-local: <input type="datetime-local"><br>week: <input type="week"><br><input type="submit"></form></body></html></pre>
+</li>
+<li><p>Input 类型 - search</p>
+<p>  search 类型用于搜索域，比如站点搜索或 Google 搜索</p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;form&gt;
+Search&lt;input type=&quot;search&quot; placeholder=&quot;测试搜索&quot; autosave=&quot;aoao.org.cn&quot; result=&quot;8&quot;&gt;
+&lt;input type=&quot;submit&quot; name=&quot;Search&quot; value=&quot;Search&quot;/&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></li>
+</ul>
+<pre><code>&lt;pre&gt;&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;body&gt;&lt;form&gt;Search&lt;input type=&quot;search&quot; placeholder=&quot;测试搜索&quot;autosave=&quot;aoao.org.cn&quot; result=&quot;8&quot;&gt;&lt;input type=&quot;submit&quot; name=&quot;Search&quot; value=&quot;Search&quot;/&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+</code></pre><h2 id="音频、视频API"><a href="#音频、视频API" class="headerlink" title="音频、视频API"></a>音频、视频API</h2><p>今天，大多数视频是通过插件（比如 Flash）来显示的。然而，并非所有浏览器都拥有同样的插件。</p>
+<p>HTML5 规定了一种通过 video 元素来包含视频的标准方法</p>
+<p>一般要插入一段视频，可以这样做</p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;video src=&quot;/i/movie.ogg&quot;  width=&quot;320&quot; height=&quot;240&quot; controls=&quot;controls&quot;&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+
+&lt;audio src=&quot;/i/song.ogg&quot; controls=&quot;controls&quot;&gt;
+Your browser does not support the audio element.
+&lt;/audio&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>control 属性供添加播放、暂停和音量控件，video 与 video之间插入的内容是供不支持 video 元素的浏览器显示的。audio也是一样的。其中更多的是对video和audio属性的记忆，自己以前也在更改视频播放那些控件的样式花了不少功夫。</p>
+<h2 id="画布-Canvas-API"><a href="#画布-Canvas-API" class="headerlink" title="画布(Canvas) API"></a>画布(Canvas) API</h2><h3 id="canvas"><a href="#canvas" class="headerlink" title="canvas"></a>canvas</h3><p>canvas 元素用于在网页上绘制图形。</p>
+<p>HTML5 的 canvas 元素使用 JavaScript 在网页上绘制图像。</p>
+<h3 id="SVG"><a href="#SVG" class="headerlink" title="SVG"></a>SVG</h3><p>在浏览器中创建图形还可以用SVG</p>
+<p>SVG 是一种使用 XML 描述 2D 图形的语言。</p>
+<h2 id="拖拽释放-Drag-and-drop-API"><a href="#拖拽释放-Drag-and-drop-API" class="headerlink" title="拖拽释放(Drag and drop) API"></a>拖拽释放(Drag and drop) API</h2><p>在 HTML5 中，<strong>任何元素都能够拖放</strong></p>
+<p>要设置一个元素能够被拖放，需要进行五个步骤</p>
+<ol>
+<li><p>设置元素为可拖放</p>
+<p> img的draggable属性设置为true</p>
+<p> <code>&lt;img draggable=&quot;true&quot; /&gt;</code></p>
+</li>
+<li><p>设置拖动的对象 - ondragstart 和 setData()</p>
+<p> 拖动元素数据类型是 Text，值是可拖动元素的 id。</p>
+<pre><code>function drag(ev){
+ev.dataTransfer.setData(&quot;Text&quot;,ev.id);
+}
+</code></pre></li>
+<li><p>放到何处 - ondragover</p>
+<pre><code>event.preventDefault()
+</code></pre></li>
+<li><p>进行放置 - ondrop</p>
+<pre><code>function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData(&quot;Text&quot;);
+ev.target.appendChild(document.getElementById(data));
+}
+</code></pre></li>
+</ol>
+<p>设置一个元素可拖动还是有点复杂，不过大致的过程很简单，详细的教程可以参照：<a href="http://blog.csdn.net/lmj623565791/article/details/31413767" target="_blank" rel="external">http://blog.csdn.net/lmj623565791/article/details/31413767 </a></p>
+<hr>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+        <div class="bdsharebuttonbox">
+  <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+  <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+  <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+  <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+  <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+  <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+  <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+  <a href="#" class="bds_more" data-cmd="more"></a>
+  <a href="#" class="bds_count" data-cmd="count"></a>
+</div>
+<script>
+window._bd_share_config=
+{
+  "common":{
+    "bdSnsKey":{},
+    "bdText":"",
+    "bdMini":"2",
+    "bdMiniList":false,
+    "bdPic":"",
+    "bdStyle":"0",
+    "bdSize":"24"
+  },
+  "share":{},
+  "image":{
+    "viewList":["qzone","tsina","tqq","renren","weixin","fbook","twi"],
+    "viewText":"分享到：",
+    "viewSize":"24"
+  },
+  "selectShare":{
+    "bdContainerClass":null,
+    "bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","fbook","twi"]
+  }
+};
+with(document)0[
+  (getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)
+];
+</script>
+      
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    <a href="/2016/08/06/css3新特性/" class="alignleft prev" >Prev</a>
+    
+    
+    <a href="/2016/06/13/Start Hexo/" class="alignright next" >Next</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+  
+<!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="2016/08/05/html5新特性/" data-title="HTML5新特性" data-url="http://shuang13.coding.me/2016/08/05/html5新特性/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"shuang13"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:shuang13.coding.me">
+  </form>
+</div>
+
+  
+
+  
+
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本名：zbb</li>
+<li>QQ  ：794861654</li>
+<li>邮箱：794861654@qq.com</li>
+</ul>
+</div>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zbbwork.com/" title="zbb's Blog">追逐命运的溯流</a></li>
+</ul>
+</div>
+
+  <div class="widget tag">
+<h3 class="title">最新评论</h3>
+<div class="entry">
+<!-- 多说最新评论 start -->
+	<div class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+<!-- 多说最新评论 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"shuang13"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</div>
+</div>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 zbb
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:20px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+</body>
+</html>

@@ -3,16 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Star Hexo | Dye Cream</title>
+  <title>Bootstrap 学习笔记(1) | Dye Cream</title>
   <meta name="author" content="zbb">
   
-  <meta name="description" content="偶然的机会，了解到可以用github或者cording搭建博客，同时，我自己之前的博客，可能是服务器出了些问题，也导致我的博客一直无法登陆。于是，想到自己重建一个博客，托管在cording上，这下总不会出问题了吧。通过学习，用hexo搭建博客的教程的途中，依然出现了一些问题，不过一次失败，再全部删掉，重新再来一遍，利用已有的经验，第二次，就非常快速简单的成功了，心中非常高兴。主题我也摒弃繁杂华丽，改为简约大气风。管理起来，方便一些，看着也舒服。
-详细教程：http://opiece.me/2015/04/09/hexo-guide/">
+  <meta name="description" content="从中学到的CSS在看Bootstrap的教程的时候，发现很多css的知识都不知道，所以在要学好Bootstrap，还是先把这些基础记下来。">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Star Hexo"/>
+  <meta property="og:title" content="Bootstrap 学习笔记(1)"/>
   <meta property="og:site_name" content="Dye Cream"/>
 
   
@@ -55,20 +54,65 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-06-13T15:50:35.867Z"><a href="/2016/06/13/Start Hexo/">2016-06-13</a></time>
+        <time datetime="2016-08-08T15:03:53.000Z"><a href="/2016/08/08/Bootstrap笔记-1/">2016-08-08</a></time>
       
       
   
-    <h1 class="title">Star Hexo</h1>
+    <h1 class="title">Bootstrap 学习笔记(1)</h1>
   
 
     </header>
     <div class="entry">
       
         
-        <p>偶然的机会，了解到可以用github或者cording搭建博客，同时，我自己之前的博客，可能是服务器出了些问题，也导致我的博客一直无法登陆。于是，想到自己重建一个博客，托管在cording上，这下总不会出问题了吧。<br>通过学习，用hexo搭建博客的教程的途中，依然出现了一些问题，不过一次失败，再全部删掉，重新再来一遍，利用已有的经验，第二次，就非常快速简单的成功了，心中非常高兴。主题我也摒弃繁杂华丽，改为简约大气风。管理起来，方便一些，看着也舒服。</p>
-<p>详细教程：<a href="http://opiece.me/2015/04/09/hexo-guide/" target="_blank" rel="external">http://opiece.me/2015/04/09/hexo-guide/</a><br><a id="more"></a></p>
-<p>最后通过这个博客，希望把大学生活的一些有意义的东西记载下来，技术上的，文学上的，生活上的，都好好的保存在这个博客上，这比用那些奖状来证明自己真实、有意义得多。</p>
+        <h2 id="从中学到的CSS"><a href="#从中学到的CSS" class="headerlink" title="从中学到的CSS"></a>从中学到的CSS</h2><p>在看Bootstrap的教程的时候，发现很多css的知识都不知道，所以在要学好Bootstrap，还是先把这些基础记下来。<br><a id="more"></a></p>
+<h4 id="line-height"><a href="#line-height" class="headerlink" title="line-height"></a>line-height</h4><p>line-height 与 font-size 的计算值之差（在 CSS 中成为“行间距”）分为两半，分别加到一个文本行内容的顶部和底部。可以包含这些内容的最小框就是行框。</p>
+<p>一般用到line-height就只有把文本垂直居中，设置行高的像素和包含文本div的高度一样。却一直没用明白行高的含义。</p>
+<p>当line-height的值为数字的时候，此数字会与当前的字体尺寸相乘来设置行间距。这是看到Bootsrap的Body默认样式  </p>
+<pre><code>font-size: 14px;
+line-height: 1.428571429;
+</code></pre><p>才知道。这里行高为20px。</p>
+<h4 id="outline"><a href="#outline" class="headerlink" title="outline"></a>outline</h4><p>outline （轮廓）是绘制于元素周围的一条线，位于<strong>边框边缘的外围</strong>，可起到突出元素的作用。</p>
+<p>轮廓线<strong>不会占据空间</strong>，也不一定是矩形。</p>
+<p>而且我这时候才知道</p>
+<pre><code>outline:#00FF00 dotted thick;
+</code></pre><p>这里颜色，虚线，加厚。顺序是可以变化的，比如我一直写的boder的样式。</p>
+<pre><code>boder:1px sliod #00FF00;
+</code></pre><p>这样也是可以的。</p>
+<p>此外，一直记不住的就是怎样去掉input输入框点击时出现的蓝色外边框。</p>
+<p>这样就行了：</p>
+<pre><code>outline:none
+</code></pre><h4 id="伪类与伪元素"><a href="#伪类与伪元素" class="headerlink" title="伪类与伪元素"></a>伪类与伪元素</h4><p>如今才知道伪类与伪元是有区别的，</p>
+<p><strong>伪类</strong></p>
+<ul>
+<li>：focus(被鼠标选中)</li>
+<li>：hover</li>
+<li>：link</li>
+<li>：first-child等</li>
+</ul>
+<p><strong>伪元素</strong></p>
+<ul>
+<li>：before</li>
+<li>：after等</li>
+</ul>
+<p>发现原来伪类是伴随着事件的，而元素就是元素而已。</p>
+<p>实际上 css3 为了区分两者，已经明确规定了伪类用一个冒号来表示，而伪元素则用两个冒号来表示。但要考虑兼容性。</p>
+<p>像这样</p>
+<pre><code>p：hover
+p::after
+</code></pre><h4 id="属性contenteditable"><a href="#属性contenteditable" class="headerlink" title="属性contenteditable"></a>属性contenteditable</h4><p>contenteditable 属性规定是否可编辑元素的内容。属于html5。</p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;p contenteditable=&quot;true&quot;&gt;这是一段可编辑的段落。请试着编辑该文本。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><pre><html><body><p contenteditable="true">这是一段可编辑的段落。请试着编辑该文本。</p></body></html></pre>
+
+<h4 id="文章标题及格式"><a href="#文章标题及格式" class="headerlink" title="文章标题及格式"></a>文章标题及格式</h4><p>原来语文没学好，至今还不知道标题的格式。像h1,h2,h3，副标题，段落p这些在写网页的时候怎么用都不知道，都是看图看感觉，我觉得有必要记记。</p>
+<p><strong>副标题</strong>要在大标题第三个字下开始写破折号。</p>
+<p>H1标签虽然权重高，但是不可以存在多个.</p>
+<h4 id="text-indent缩进"><a href="#text-indent缩进" class="headerlink" title="text-indent缩进"></a>text-indent缩进</h4><p>text-indent只用于div，p这样的元素上，像image、input、inline-block、inline元素绝对不用。</p>
 
       
     </div>
@@ -125,8 +169,8 @@ with(document)0[
 
  <nav id="pagination" >
     
-    <a href="/2016/08/05/html5新特性/" class="alignleft prev" >Prev</a>
     
+    <a href="/2016/08/08/css学习/" class="alignright next" >Next</a>
     
     <div class="clearfix"></div>
 </nav>
@@ -137,7 +181,7 @@ with(document)0[
 
   
 <!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="2016/06/13/Start Hexo/" data-title="Star Hexo" data-url="http://shuang13.coding.me/2016/06/13/Start Hexo/"></div>
+  <div class="ds-thread" data-thread-key="2016/08/08/Bootstrap笔记-1/" data-title="Bootstrap 学习笔记(1)" data-url="http://shuang13.coding.me/2016/08/08/Bootstrap笔记-1/"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
