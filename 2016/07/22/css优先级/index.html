@@ -3,16 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Star Hexo | Dye Cream</title>
+  <title>CSS的基础学习3 -css优先级 | Dye Cream</title>
   <meta name="author" content="zbb">
   
-  <meta name="description" content="偶然的机会，了解到可以用github或者cording搭建博客，同时，我自己之前的博客，可能是服务器出了些问题，也导致我的博客一直无法登陆。于是，想到自己重建一个博客，托管在cording上，这下总不会出问题了吧。通过学习，用hexo搭建博客的教程的途中，依然出现了一些问题，不过一次失败，再全部删掉，重新再来一遍，利用已有的经验，第二次，就非常快速简单的成功了，心中非常高兴。主题我也摒弃繁杂华丽，改为简约大气风。管理起来，方便一些，看着也舒服。
-详细教程：http://opiece.me/2015/04/09/hexo-guide/">
+  <meta name="description" content="CSS的优先级也是一个很容易忽视的基础点，我对这方面也没仔细学过，所以就像加减乘法的优先级一样，必须牢记这些优先级。">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Star Hexo"/>
+  <meta property="og:title" content="CSS的基础学习3 -css优先级"/>
   <meta property="og:site_name" content="Dye Cream"/>
 
   
@@ -55,20 +54,67 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-06-13T15:50:35.867Z"><a href="/2016/06/13/Start Hexo/">2016-06-13</a></time>
+        <time datetime="2016-07-22T04:04:14.000Z"><a href="/2016/07/22/css优先级/">2016-07-22</a></time>
       
       
   
-    <h1 class="title">Star Hexo</h1>
+    <h1 class="title">CSS的基础学习3 -css优先级</h1>
   
 
     </header>
     <div class="entry">
       
         
-        <p>偶然的机会，了解到可以用github或者cording搭建博客，同时，我自己之前的博客，可能是服务器出了些问题，也导致我的博客一直无法登陆。于是，想到自己重建一个博客，托管在cording上，这下总不会出问题了吧。<br>通过学习，用hexo搭建博客的教程的途中，依然出现了一些问题，不过一次失败，再全部删掉，重新再来一遍，利用已有的经验，第二次，就非常快速简单的成功了，心中非常高兴。主题我也摒弃繁杂华丽，改为简约大气风。管理起来，方便一些，看着也舒服。</p>
-<p>详细教程：<a href="http://opiece.me/2015/04/09/hexo-guide/" target="_blank" rel="external">http://opiece.me/2015/04/09/hexo-guide/</a><br><a id="more"></a></p>
-<p>最后通过这个博客，希望把大学生活的一些有意义的东西记载下来，技术上的，文学上的，生活上的，都好好的保存在这个博客上，这比用那些奖状来证明自己真实、有意义得多。</p>
+        <p>CSS的优先级也是一个很容易忽视的基础点，我对这方面也没仔细学过，所以就像加减乘法的优先级一样，必须牢记这些优先级。<br><a id="more"></a></p>
+<h3 id="CSS优先级"><a href="#CSS优先级" class="headerlink" title="CSS优先级"></a>CSS优先级</h3><p>如果从高到低的顺序排列的话：</p>
+<ol>
+<li><p>在属性后面加！important。它相当于最高命令，会覆盖所有样式。</p>
+<p> box{color:red !important;}</p>
+</li>
+<li><p>老二是直接在html标签中添加style属性，也就是内联样式。</p>
+<p> <code>&lt;p style=&quot;color: red; margin-left: 20px&quot;&gt;This is a paragraph&lt;/p&gt;</code></p>
+</li>
+<li><p>第三级优先的属性是由一个或多个id选择器来定义的。例如 #id{margin:0;} 会覆盖 .classname{margin:10px;}。</p>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+#idname
+{
+background-color:yellow;
+}
+.classname
+{
+background-color:red;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;idname&quot; class=&quot;classname&quot;&gt;
+&lt;p&gt;子代选择器&lt;/p&gt;
+&lt;p&gt;子代选择器&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;其他段落&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <pre><html><head><style>#idname{background-color:yellow;}.classname{background-color:red;}</style></head><body><div id="idname" class="classname"><p>子代选择器</p><p>子代选择器</p></div><p>其他段落</p></body></html></pre>
+</li>
+<li><p>第四优先级是由一个或多个 类选择器、属性选择器、伪类选择器定义.如 .classname{margin:3px;} 会覆盖 div{margin:6px;}</p>
+</li>
+<li>第五级由一个或多个 类型选择器定义。如 div{margin:6px;}  覆盖  *{margin:10px;} 。</li>
+<li>所以通配选择器就是最低的一级了。</li>
+</ol>
+<p><strong>平时还会遇到多个相同级别的CSS选择器优先级，这个时候就要从位置上来分级了：</strong></p>
+<ol>
+<li>位于head标签里的style中所定义的CSS拥有最高级的优先权。也就是<strong>内部样式表</strong></li>
+<li><p>第二级的优先属性由位于 style标签中的 @import 引入样式表所<br>定义。</p>
+<p> @import语法结构<br> @import + 空格+ url(CSS文件路径地址);<br> 在html和css文件中均可使用。</p>
+</li>
+<li>第三级的优先属性由link标签所引入的样式表定义。也就是<strong>外部样式表</strong></li>
+<li>第四级的优先属性由link标签所引入的样式表内的 @import 导入样式表定义。</li>
+<li>第五级优先的样式有用户设定。</li>
+<li>最低级的优先权由浏览器默认。</li>
+<li>如果是同一个选择器，同一个属性，是从前到后，后面的会覆盖前面的样式。</li>
+</ol>
 
       
     </div>
@@ -125,8 +171,10 @@ with(document)0[
 
  <nav id="pagination" >
     
-    <a href="/2016/07/20/css命名/" class="alignleft prev" >Prev</a>
+    <a href="/2016/07/23/css页面呈现/" class="alignleft prev" >Prev</a>
     
+    
+    <a href="/2016/07/21/css选择器/" class="alignright next" >Next</a>
     
     <div class="clearfix"></div>
 </nav>
@@ -137,7 +185,7 @@ with(document)0[
 
   
 <!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="2016/06/13/Start Hexo/" data-title="Star Hexo" data-url="http://shuang13.coding.me/2016/06/13/Start Hexo/"></div>
+  <div class="ds-thread" data-thread-key="2016/07/22/css优先级/" data-title="CSS的基础学习3 -css优先级" data-url="http://shuang13.coding.me/2016/07/22/css优先级/"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">

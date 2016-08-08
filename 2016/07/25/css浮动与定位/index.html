@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>CSS的基础学习6 -浮动与定位 | Dye Cream</title>
+  <meta name="author" content="zbb">
+  
+  <meta name="description" content="CSS定位CSS有三种基本的定位：普通流、 浮动、绝对定位
+普通流就是浏览器对块级元素、行内元素等默认的排列方式。">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="CSS的基础学习6 -浮动与定位"/>
+  <meta property="og:site_name" content="Dye Cream"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="Dye Cream" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Dye Cream</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+  	<li> <a href="/atom.xml">RSS</a> </li>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="//about">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-07-25T04:04:14.000Z"><a href="/2016/07/25/css浮动与定位/">2016-07-25</a></time>
+      
+      
+  
+    <h1 class="title">CSS的基础学习6 -浮动与定位</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        
+        <h2 id="CSS定位"><a href="#CSS定位" class="headerlink" title="CSS定位"></a>CSS定位</h2><p>CSS有三种基本的定位：普通流、 浮动、绝对定位</p>
+<p>普通流就是浏览器对块级元素、行内元素等默认的排列方式。<br><a id="more"></a></p>
+<h3 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h3><p>CSS允许任何元素浮动，浮动元素相当于会从正常的文本流中删除。最开始float是用来做文字环绕效果的。</p>
+<pre><code>&lt;div&gt;&lt;img src=&quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&quot; style=&quot;width:100px;float:left;&quot; &gt;
+&lt;/div&gt;
+</code></pre><html><br><body><br><div><img src="http://img3.imgtn.bdimg.com/it/u=4109883987,3297169276&fm=11&gp=0.jpg" style="width:100px;float:left;">蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆<br></div><br></body><br></html>
+
+<p><strong>float主要用于横向排版、或者多列布局，虽然好用，但也有很多问题，比如浮动会造成的父元素高度塌陷。</strong></p>
+<pre><code>&lt;div style=&quot;border:1px solid #000;padding:10px;&quot; &gt;&lt;img src=&quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&quot; style=&quot;width:100px;&quot; &gt;
+&lt;/div&gt;
+</code></pre><pre><html><body><div style="border:1px solid #000;padding:10px;"><img src="http://img3.imgtn.bdimg.com/it/u=4109883987,3297169276&fm=11&gp=0.jpg" style="width:100px;"></div></body></html></pre>
+
+<p><strong>加上浮动</strong></p>
+<pre><code>&lt;div style=&quot;border:1px solid #000;padding:10px;&quot; &gt;&lt;img src=&quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&quot; style=&quot;width:100px;float:left;&quot; &gt;
+&lt;/div&gt;
+</code></pre><pre><html><body><div style="border:1px solid #000;padding:10px;"><img src="http://img3.imgtn.bdimg.com/it/u=4109883987,3297169276&fm=11&gp=0.jpg" style="width:100px;float:left;"></div></body></html></pre>
+
+<p><strong>加上浮动后，父元素出现了坍塌现象，主要是因为float让元素脱离了文本流。</strong></p>
+<p><strong>当对父级元素加上float后，会出现包裹性。</strong></p>
+<pre><code>&lt;div style=&quot;border:1px solid #000;padding:10px;float:left;&quot; &gt;&lt;img src=&quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&quot; style=&quot;width:100px;&quot; &gt;
+&lt;/div&gt;
+</code></pre><pre><html><body><div style="border:1px solid #000;padding:10px;float:left;"><img src="http://img3.imgtn.bdimg.com/it/u=4109883987,3297169276&fm=11&gp=0.jpg" style="width:100px;"></div></body></html></pre>
+
+<p><strong>另外float还具有清空格的作用，如img之间默认会有空格，添加float后就会排布紧密了。</strong></p>
+<h3 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h3><p>清除浮动有很多方法，有的博客都列举了8个多，我觉得掌握几个基本的就可以了，其他有些也很麻烦，只做了解。常见的方法先列举几个。</p>
+<ol>
+<li>给父级元素设置浮动</li>
+<li>给父级元素设置固定高度height</li>
+<li>给父级元素定义 overflow:hidden</li>
+<li>浮动元素结尾处加空div标签设置clear:both</li>
+<li><p>父级div定义 伪类:after </p>
+<p> div:after{display:block;clear:both;content:””;visibility:hidden;height:0} </p>
+</li>
+</ol>
+<p>现在一般都用给父级元素定义 overflow:hidden来清除浮动，而其他的视情况而定。</p>
+<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h3><p>定位的关键字就是position了，我们一般的定位除了网页默认的块级元素和行内元素由上到下、由左到右，然后用设置盒子模型的margin，padding来进行基本移动，再加上浮动float来进行横向排版这些方法外，还有一个不能缺少的定位方法就是运用positon。</p>
+<p>position一共有四个属性：</p>
+<ul>
+<li><strong>static默认属性</strong></li>
+<li><strong>relative</strong></li>
+</ul>
+<p>relative相对定位，会导致自身位置的相对变化，而不会影响其他元素的位置、大小的变化</p>
+<pre><code>&lt;html&gt;
+&lt;body&gt;
+&lt;div &gt;123&lt;/div&gt;
+&lt;div style=&quot;position:relative;top:10px;left:20px;&quot;&gt;123&lt;/div&gt;
+&lt;div &gt;123&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><pre><html><body><div>123</div><div style="position:relative;top:10px;left:20px;">123</div><div>123</div></body></html></pre>
+
+<ul>
+<li><strong>absolute</strong></li>
+</ul>
+<p>absolute绝对定位，当元素设置absolute之后，就会和float一样脱离普通文本流。且最重要的是absolute的元素对于祖先有absolute或relative的元素进行定位。且absolute一般不跟float同时使用。</p>
+ <pre><html><body><div>123</div><div style="background-color:yellow;">123</div><div>123</div></body></html></pre>
+
+<p>加上absolute后：</p>
+<pre><code>&lt;html&gt;
+&lt;body&gt;
+&lt;div &gt;123&lt;/div&gt;
+&lt;div style=&quot;background-color:yellow；position:absolute;&quot;&gt;123&lt;/div&gt;
+&lt;div &gt;123&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <pre><html><body><div>123</div><div style="background-color:yellow;position:absolute;left:10px;">123</div><div>123</div></body></html></pre>
+
+<p>这里体现了absolute的许多特性</p>
+<ul>
+<li><p>第一个是具有<strong>包裹性</strong>之前div的宽度是整个屏幕，之后为文字宽度。</p>
+</li>
+<li><p>第二个是<strong>跟随性</strong>，当没有设置left和top的值的时候是这个样子的 <pre><html><body><div>123</div><div style="background-color:yellow;position:absolute;">123</div><div>123</div></body></html></pre>他会待在原位，但不占文本流的位置空间。设置left和top后就会根据上下文来进行定位，也就是absolute的元素对于祖先有absolute或relative的元素进行定位。</p>
+</li>
+</ul>
+<p><strong>那么我们如果把left改为margin-left呢</strong></p>
+<pre><html><body><div>123</div><div style="background-color:yellow;position:absolute;margin-left:10px;">123</div><div>123</div></body></html></pre>
+
+<p>这时就会相对原来位置进行移动，可见left和margin-left是有区别的。</p>
+<ul>
+<li><strong>fixed</strong></li>
+</ul>
+<p>fixed和absolute的区别</p>
+<p>absolute元素是根据最近的定位上下文确定位置，而fixed永远根据浏览器确定位置。而relative元素的定位永远是相对于元素自身位置的。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+        <div class="bdsharebuttonbox">
+  <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+  <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+  <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+  <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+  <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+  <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+  <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+  <a href="#" class="bds_more" data-cmd="more"></a>
+  <a href="#" class="bds_count" data-cmd="count"></a>
+</div>
+<script>
+window._bd_share_config=
+{
+  "common":{
+    "bdSnsKey":{},
+    "bdText":"",
+    "bdMini":"2",
+    "bdMiniList":false,
+    "bdPic":"",
+    "bdStyle":"0",
+    "bdSize":"24"
+  },
+  "share":{},
+  "image":{
+    "viewList":["qzone","tsina","tqq","renren","weixin","fbook","twi"],
+    "viewText":"分享到：",
+    "viewSize":"24"
+  },
+  "selectShare":{
+    "bdContainerClass":null,
+    "bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","fbook","twi"]
+  }
+};
+with(document)0[
+  (getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)
+];
+</script>
+      
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    <a href="/2016/07/26/css学习总结/" class="alignleft prev" >Prev</a>
+    
+    
+    <a href="/2016/07/24/css盒模型/" class="alignright next" >Next</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+  
+<!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="2016/07/25/css浮动与定位/" data-title="CSS的基础学习6 -浮动与定位" data-url="http://shuang13.coding.me/2016/07/25/css浮动与定位/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"shuang13"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:shuang13.coding.me">
+  </form>
+</div>
+
+  
+
+  
+
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本名：zbb</li>
+<li>QQ  ：794861654</li>
+<li>邮箱：794861654@qq.com</li>
+</ul>
+</div>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zbbwork.com/" title="zbb's Blog">追逐命运的溯流</a></li>
+</ul>
+</div>
+
+  <div class="widget tag">
+<h3 class="title">最新评论</h3>
+<div class="entry">
+<!-- 多说最新评论 start -->
+	<div class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+<!-- 多说最新评论 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"shuang13"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</div>
+</div>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 zbb
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:20px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+</body>
+</html>

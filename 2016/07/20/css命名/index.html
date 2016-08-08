@@ -3,16 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Star Hexo | Dye Cream</title>
+  <title>CSS的基础学习1 -命名与书写规范 | Dye Cream</title>
   <meta name="author" content="zbb">
   
-  <meta name="description" content="偶然的机会，了解到可以用github或者cording搭建博客，同时，我自己之前的博客，可能是服务器出了些问题，也导致我的博客一直无法登陆。于是，想到自己重建一个博客，托管在cording上，这下总不会出问题了吧。通过学习，用hexo搭建博客的教程的途中，依然出现了一些问题，不过一次失败，再全部删掉，重新再来一遍，利用已有的经验，第二次，就非常快速简单的成功了，心中非常高兴。主题我也摒弃繁杂华丽，改为简约大气风。管理起来，方便一些，看着也舒服。
-详细教程：http://opiece.me/2015/04/09/hexo-guide/">
+  <meta name="description" content="前文css包含许多东西，自己也知道在css方面基础不够扎实，本周的学习我计划从几个我自认为不足的方面进行学习，在css的基本语法方面我就不进行过多的学习了。然后在学习中的例子，保证自己亲手把代码打出来，不要只是复制粘贴，希望以此能记得牢一些。">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Star Hexo"/>
+  <meta property="og:title" content="CSS的基础学习1 -命名与书写规范"/>
   <meta property="og:site_name" content="Dye Cream"/>
 
   
@@ -55,20 +54,50 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-06-13T15:50:35.867Z"><a href="/2016/06/13/Start Hexo/">2016-06-13</a></time>
+        <time datetime="2016-07-20T04:04:14.000Z"><a href="/2016/07/20/css命名/">2016-07-20</a></time>
       
       
   
-    <h1 class="title">Star Hexo</h1>
+    <h1 class="title">CSS的基础学习1 -命名与书写规范</h1>
   
 
     </header>
     <div class="entry">
       
         
-        <p>偶然的机会，了解到可以用github或者cording搭建博客，同时，我自己之前的博客，可能是服务器出了些问题，也导致我的博客一直无法登陆。于是，想到自己重建一个博客，托管在cording上，这下总不会出问题了吧。<br>通过学习，用hexo搭建博客的教程的途中，依然出现了一些问题，不过一次失败，再全部删掉，重新再来一遍，利用已有的经验，第二次，就非常快速简单的成功了，心中非常高兴。主题我也摒弃繁杂华丽，改为简约大气风。管理起来，方便一些，看着也舒服。</p>
-<p>详细教程：<a href="http://opiece.me/2015/04/09/hexo-guide/" target="_blank" rel="external">http://opiece.me/2015/04/09/hexo-guide/</a><br><a id="more"></a></p>
-<p>最后通过这个博客，希望把大学生活的一些有意义的东西记载下来，技术上的，文学上的，生活上的，都好好的保存在这个博客上，这比用那些奖状来证明自己真实、有意义得多。</p>
+        <h2 id="前文"><a href="#前文" class="headerlink" title="前文"></a>前文</h2><p>css包含许多东西，自己也知道在css方面基础不够扎实，本周的学习我计划从几个我自认为不足的方面进行学习，在css的基本语法方面我就不进行过多的学习了。然后在学习中的例子，保证自己亲手把代码打出来，不要只是复制粘贴，希望以此能记得牢一些。<br><a id="more"></a></p>
+<h2 id="CSS的命名与书写规范"><a href="#CSS的命名与书写规范" class="headerlink" title="CSS的命名与书写规范"></a>CSS的命名与书写规范</h2><p>我觉得在写网页的时候，书写规范是十分重要的，既能保证自己的清晰思路，也能让别人更好的看懂你的代码。但我对这方面也没重视过，当回去看自己原来的代码时，才发现有多么的头疼。所以自己总结了一下：</p>
+<ol>
+<li>css类在命名的时候应该全用小写加中划线“-” 的方式，并分清父类与子类，让层次更加清晰</li>
+<li>尽量用英文来概括你这一部分代码样式的含义，也有利于多学几个英文单词</li>
+<li>然后避免class与id的重名，在js中id的命名十分重要，如果与class重名以后其实本身不会发生什么问题，主要怕搞混</li>
+</ol>
+<h2 id="CSS书写先后顺序"><a href="#CSS书写先后顺序" class="headerlink" title="CSS书写先后顺序"></a>CSS书写先后顺序</h2><ul>
+<li>位置属性:    <ul>
+<li>display</li>
+<li>position</li>
+<li>top、right、bottom、left(顺时针)</li>
+<li>float</li>
+<li>clear</li>
+<li>z-index …</li>
+</ul>
+</li>
+<li>盒模型:<ul>
+<li>margin</li>
+<li>padding</li>
+<li>width</li>
+<li>height …</li>
+</ul>
+</li>
+<li>文字等排版:<ul>
+<li>color</li>
+<li>font</li>
+<li>content</li>
+<li>border</li>
+<li>background</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -125,8 +154,10 @@ with(document)0[
 
  <nav id="pagination" >
     
-    <a href="/2016/07/20/css命名/" class="alignleft prev" >Prev</a>
+    <a href="/2016/07/21/css选择器/" class="alignleft prev" >Prev</a>
     
+    
+    <a href="/2016/06/13/Start Hexo/" class="alignright next" >Next</a>
     
     <div class="clearfix"></div>
 </nav>
@@ -137,7 +168,7 @@ with(document)0[
 
   
 <!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="2016/06/13/Start Hexo/" data-title="Star Hexo" data-url="http://shuang13.coding.me/2016/06/13/Start Hexo/"></div>
+  <div class="ds-thread" data-thread-key="2016/07/20/css命名/" data-title="CSS的基础学习1 -命名与书写规范" data-url="http://shuang13.coding.me/2016/07/20/css命名/"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">

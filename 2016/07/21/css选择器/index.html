@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Star Hexo | Dye Cream</title>
+  <title>CSS的基础学习2 -选择器 | Dye Cream</title>
   <meta name="author" content="zbb">
   
-  <meta name="description" content="偶然的机会，了解到可以用github或者cording搭建博客，同时，我自己之前的博客，可能是服务器出了些问题，也导致我的博客一直无法登陆。于是，想到自己重建一个博客，托管在cording上，这下总不会出问题了吧。通过学习，用hexo搭建博客的教程的途中，依然出现了一些问题，不过一次失败，再全部删掉，重新再来一遍，利用已有的经验，第二次，就非常快速简单的成功了，心中非常高兴。主题我也摒弃繁杂华丽，改为简约大气风。管理起来，方便一些，看着也舒服。
-详细教程：http://opiece.me/2015/04/09/hexo-guide/">
+  <meta name="description" content="常用选择器
+组合选择器">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Star Hexo"/>
+  <meta property="og:title" content="CSS的基础学习2 -选择器"/>
   <meta property="og:site_name" content="Dye Cream"/>
 
   
@@ -55,20 +55,138 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-06-13T15:50:35.867Z"><a href="/2016/06/13/Start Hexo/">2016-06-13</a></time>
+        <time datetime="2016-07-21T04:04:14.000Z"><a href="/2016/07/21/css选择器/">2016-07-21</a></time>
       
       
   
-    <h1 class="title">Star Hexo</h1>
+    <h1 class="title">CSS的基础学习2 -选择器</h1>
   
 
     </header>
     <div class="entry">
       
         
-        <p>偶然的机会，了解到可以用github或者cording搭建博客，同时，我自己之前的博客，可能是服务器出了些问题，也导致我的博客一直无法登陆。于是，想到自己重建一个博客，托管在cording上，这下总不会出问题了吧。<br>通过学习，用hexo搭建博客的教程的途中，依然出现了一些问题，不过一次失败，再全部删掉，重新再来一遍，利用已有的经验，第二次，就非常快速简单的成功了，心中非常高兴。主题我也摒弃繁杂华丽，改为简约大气风。管理起来，方便一些，看着也舒服。</p>
-<p>详细教程：<a href="http://opiece.me/2015/04/09/hexo-guide/" target="_blank" rel="external">http://opiece.me/2015/04/09/hexo-guide/</a><br><a id="more"></a></p>
-<p>最后通过这个博客，希望把大学生活的一些有意义的东西记载下来，技术上的，文学上的，生活上的，都好好的保存在这个博客上，这比用那些奖状来证明自己真实、有意义得多。</p>
+        <ol>
+<li>常用选择器</li>
+<li>组合选择器</li>
+</ol>
+<a id="more"></a>
+<ul>
+<li><p>常用选择器：</p>
+<ul>
+<li><p>类选择器 .class </p>
+<p>  <code>.word {color:red;}</code></p>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.word {color:red;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;word&quot;&gt;
+&lt;p&gt;类选择器类选择器&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>  <pre><html><head><style>.word {color:red;}</style></head><body><div class="word"><p>类选择器类选择器</p></div></body></html></pre>
+</li>
+<li><p>id选择器 #id</p>
+<p>  <code>#word {color:red;}</code></p>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+#word {color:red;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;word&quot;&gt;
+&lt;p&gt;id选择器id选择器&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>  <pre><html><head><style>#word {color:red;}</style></head><body><div id="word"><p>id选择器id选择器</p></div></body></html></pre></li>
+<li><p>通配符 *</p>
+<p>  <code>* {margin:0; padding:0;}</code></p>
+</li>
+<li><p>元素选择器 element</p>
+<p>  <code>p {color:red;}</code></p>
+</li>
+<li>属性选择器 [attribute]</li>
+</ul>
+</li>
+</ul>
+<pre><code>`.at[target]{
+background-color:yellow;
+}`
+
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+    .at[target]{
+    background-color:yellow;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div&gt;
+    &lt;a class=&quot;at&quot; target=&apos;##&apos;&gt;属性选择器属性选择器&lt;/a&gt;&lt;/br&gt;
+    &lt;a&gt;没有target没有target&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre><pre><html><head><style>.at[target]{background-color:yellow;}</style></head><body><div><a class="at" target="_blank">属性选择器属性选择器</a><br><a>没有target没有target</a></div></body></html></pre>
+
+<pre><code>- 伪类选择器 name:伪类
+    &lt;/br&gt;伪类有许多常见的有：hover,:after,:before,:first-child,:last-child等
+</code></pre><ul>
+<li><p>组合选择器</p>
+<ul>
+<li>群组选择器 name1,name2</li>
+<li>后代选择器 name1 name2</li>
+<li><p>相邻兄弟选择器 name1 + name2</p>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.name1+p
+{
+background-color:yellow;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;name1&quot;&gt;
+&lt;p&gt;相邻兄弟选择器&lt;/p&gt;
+&lt;p&gt;相邻兄弟选择器&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;相邻兄弟选择器&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>  <pre><html><head><style>.name1+p{background-color:yellow;}</style></head><body><div class="name1"><p>相邻兄弟选择器</p><p>相邻兄弟选择器</p></div><p>相邻兄弟选择器</p></body></html></pre></li>
+<li><p>子代选择器 name1 &gt; name2</p>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.name2 &gt; p
+{
+background-color:yellow;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;name2&quot;&gt;
+&lt;p&gt;子代选择器&lt;/p&gt;
+&lt;p&gt;子代选择器&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;其他段落&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>  <pre><html><head><style>.name2 > p{background-color:yellow;}</style></head><body><div class="name2"><p>子代选择器</p><p>子代选择器</p></div><p>其他段落</p></body></html></pre>
+
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="子代选择器与后代选择器的区别"><a href="#子代选择器与后代选择器的区别" class="headerlink" title="子代选择器与后代选择器的区别"></a>子代选择器与后代选择器的区别</h4><p><strong>子代选择器只对子代有用，而后代选择器不仅对子代对孙代，曾孙代都有用。</strong></p>
 
       
     </div>
@@ -125,8 +243,10 @@ with(document)0[
 
  <nav id="pagination" >
     
-    <a href="/2016/07/20/css命名/" class="alignleft prev" >Prev</a>
+    <a href="/2016/07/22/css优先级/" class="alignleft prev" >Prev</a>
     
+    
+    <a href="/2016/07/20/css命名/" class="alignright next" >Next</a>
     
     <div class="clearfix"></div>
 </nav>
@@ -137,7 +257,7 @@ with(document)0[
 
   
 <!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="2016/06/13/Start Hexo/" data-title="Star Hexo" data-url="http://shuang13.coding.me/2016/06/13/Start Hexo/"></div>
+  <div class="ds-thread" data-thread-key="2016/07/21/css选择器/" data-title="CSS的基础学习2 -选择器" data-url="http://shuang13.coding.me/2016/07/21/css选择器/"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
