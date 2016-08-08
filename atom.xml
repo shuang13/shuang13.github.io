@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shuang13.coding.me/"/>
-  <updated>2016-08-08T12:55:11.617Z</updated>
+  <updated>2016-08-08T14:06:31.568Z</updated>
   <id>http://shuang13.coding.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://shuang13.coding.me/2016/08/08/css3-study/"/>
     <id>http://shuang13.coding.me/2016/08/08/css3-study/</id>
     <published>2016-08-08T12:34:14.000Z</published>
-    <updated>2016-08-08T12:55:11.617Z</updated>
+    <updated>2016-08-08T14:06:31.568Z</updated>
     
     <content type="html">&lt;h1 id=&quot;CSS的基础学习&quot;&gt;&lt;a href=&quot;#CSS的基础学习&quot; class=&quot;headerlink&quot; title=&quot;CSS的基础学习&quot;&gt;&lt;/a&gt;CSS的基础学习&lt;/h1&gt;&lt;h2 id=&quot;前文&quot;&gt;&lt;a href=&quot;#前文&quot; class=&quot;headerlink&quot; title=&quot;前文&quot;&gt;&lt;/a&gt;前文&lt;/h2&gt;&lt;p&gt;css包含许多东西，自己也知道在css方面基础不够扎实，本周的学习我计划从几个我自认为不足的方面进行学习，在css的基本语法方面我就不进行过多的学习了。然后在学习中的例子，保证自己亲手把代码打出来，不要只是复制粘贴，希望以此能记得牢一些。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;CSS的命名与书写规范&quot;&gt;&lt;a href=&quot;#CSS的命名与书写规范&quot; class=&quot;headerlink&quot; title=&quot;CSS的命名与书写规范&quot;&gt;&lt;/a&gt;CSS的命名与书写规范&lt;/h2&gt;&lt;p&gt;我觉得在写网页的时候，书写规范是十分重要的，既能保证自己的清晰思路，也能让别人更好的看懂你的代码。但我对这方面也没重视过，当回去看自己原来的代码时，才发现有多么的头疼。所以自己总结了一下：&lt;/p&gt;
@@ -95,29 +95,34 @@
 &lt;li&gt;&lt;p&gt;元素选择器 element&lt;/p&gt;
 &lt;p&gt;  &lt;code&gt;p {color:red;}&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;属性选择器 [attribute]&lt;/p&gt;
-  &lt;pre&gt;&lt;--选择带有target属性的a标签 a[target]{=&quot;&quot; background-color:yellow;=&quot;&quot; }&lt;=&quot;&quot; pre=&quot;&quot;&gt;
-      &lt;html&gt;
-      &lt;head&gt;
-      &lt;style&gt;
-      a[target]{
-      background-color:yellow;
-      }
-      &lt;/style&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-      &lt;div&gt;
-      &lt;a target=&quot;##&quot;&gt;属性选择器属性选择器&lt;/a&gt;&lt;br&gt;
-      &lt;a&gt;没有target没有target&lt;/a&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;
-      
-      &lt;/body&gt;
-      &lt;/html&gt;
-
-  &lt;pre&gt;&lt;html&gt;
-  &lt;head&gt;&lt;style&gt;a[target]{background-color:yellow;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div&gt;&lt;a target=&quot;_blank&quot;&gt;属性选择器属性选择器&lt;/a&gt;&lt;br&gt;&lt;a&gt;没有target没有target&lt;/a&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;&lt;/--选择带有target属性的a标签&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;伪类选择器 name:伪类&lt;br&gt;  &lt;br&gt;伪类有许多常见的有：hover,:after,:before,:first-child,:last-child等&lt;/li&gt;
+&lt;li&gt;属性选择器 [attribute]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;`.at[target]{
+background-color:yellow;
+}`
+
+    &amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+    &amp;lt;style&amp;gt;
+    .at[target]{
+    background-color:yellow;
+    }
+    &amp;lt;/style&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+    &amp;lt;div&amp;gt;
+    &amp;lt;a class=&amp;quot;at&amp;quot; target=&amp;apos;##&amp;apos;&amp;gt;属性选择器属性选择器&amp;lt;/a&amp;gt;&amp;lt;/br&amp;gt;
+    &amp;lt;a&amp;gt;没有target没有target&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;/body&amp;gt;
+    &amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;.at[target]{background-color:yellow;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div&gt;&lt;a class=&quot;at&quot; target=&quot;_blank&quot;&gt;属性选择器属性选择器&lt;/a&gt;&lt;br&gt;&lt;a&gt;没有target没有target&lt;/a&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;- 伪类选择器 name:伪类
+    &amp;lt;/br&amp;gt;伪类有许多常见的有：hover,:after,:before,:first-child,:last-child等
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;组合选择器&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;群组选择器 name1,name2&lt;/li&gt;
@@ -159,14 +164,15 @@ background-color:yellow;
 &amp;lt;p&amp;gt;其他段落&amp;lt;/p&amp;gt;
 &amp;lt;/body&amp;gt;
 &amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  &lt;pre&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;.name2 &amp;gt; p{background-color:yellow;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;name2&quot;&gt;&lt;p&gt;子代选择器&lt;/p&gt;&lt;p&gt;子代选择器&lt;/p&gt;&lt;/div&gt;&lt;p&gt;其他段落&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;  &lt;pre&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;.name2 &gt; p{background-color:yellow;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;name2&quot;&gt;&lt;p&gt;子代选择器&lt;/p&gt;&lt;p&gt;子代选择器&lt;/p&gt;&lt;/div&gt;&lt;p&gt;其他段落&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h4 id=&quot;子代选择器与后代选择器的区别&quot;&gt;&lt;a href=&quot;#子代选择器与后代选择器的区别&quot; class=&quot;headerlink&quot; title=&quot;子代选择器与后代选择器的区别&quot;&gt;&lt;/a&gt;子代选择器与后代选择器的区别&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;子代选择器只对子代有用，而后代选择器不仅对子代对孙代，曾孙代都有用。&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&quot;优先级&quot;&gt;&lt;a href=&quot;#优先级&quot; class=&quot;headerlink&quot; title=&quot;优先级&quot;&gt;&lt;/a&gt;优先级&lt;/h2&gt;&lt;p&gt;CSS的优先级也是一个很容易忽视的基础点，我对这方面也没仔细学过，所以就像加减乘法的优先级一样，必须牢记这些优先级。&lt;/p&gt;
 &lt;h3 id=&quot;CSS优先级&quot;&gt;&lt;a href=&quot;#CSS优先级&quot; class=&quot;headerlink&quot; title=&quot;CSS优先级&quot;&gt;&lt;/a&gt;CSS优先级&lt;/h3&gt;&lt;p&gt;如果从高到低的顺序排列的话：&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;在属性后面加！important。它相当于最高命令，会覆盖所有样式。&lt;/p&gt;
 &lt;p&gt; box{color:red !important;}&lt;/p&gt;
