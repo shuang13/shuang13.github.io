@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shuang13.coding.me/"/>
-  <updated>2016-08-08T14:12:50.836Z</updated>
+  <updated>2016-08-08T14:51:22.894Z</updated>
   <id>http://shuang13.coding.me/</id>
   
   <author>
@@ -14,6 +14,342 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>html5 study</title>
+    <link href="http://shuang13.coding.me/2016/08/08/html5-study/"/>
+    <id>http://shuang13.coding.me/2016/08/08/html5-study/</id>
+    <published>2016-08-08T14:50:47.000Z</published>
+    <updated>2016-08-08T14:51:22.894Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;HTML5新特性&quot;&gt;&lt;a href=&quot;#HTML5新特性&quot; class=&quot;headerlink&quot; title=&quot;HTML5新特性&quot;&gt;&lt;/a&gt;HTML5新特性&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;新的特殊内容元素&lt;/li&gt;
+&lt;li&gt;新的表单控件&lt;/li&gt;
+&lt;li&gt;音频、视频API&lt;/li&gt;
+&lt;li&gt;画布(Canvas) API&lt;/li&gt;
+&lt;li&gt;地理(Geolocation) API&lt;/li&gt;
+&lt;li&gt;拖拽释放(Drag and drop) API&lt;/li&gt;
+&lt;li&gt;网页存储(Web storage) API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ps&lt;/strong&gt;:html5标签的例子已经在第一次作业熟悉过了，就不在过多的重复了&lt;/p&gt;
+&lt;h2 id=&quot;新的特殊内容元素&quot;&gt;&lt;a href=&quot;#新的特殊内容元素&quot; class=&quot;headerlink&quot; title=&quot;新的特殊内容元素&quot;&gt;&lt;/a&gt;新的特殊内容元素&lt;/h2&gt;&lt;p&gt;在HTML4中的内容标签级别相同，只能用class类名来区分各个模块的语义。而HTML5中的比如 article、footer、header、nav、section等内容标签级别不同，可便于搜索引擎快速识别。&lt;br&gt;&lt;img src=&quot;http://img.yixieshi.com/uploads/allimg/111128/011AT245-1.jpg?sign=MBO%3AxSCczKp2MjuZ%3AuHDSfo6cZn9Z6c6vbaJX1h%2Fdb8E%3D&amp;amp;imageView2/2/w/558/h/246&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这张图就让我很快明白了这个意思。&lt;/p&gt;
+&lt;h2 id=&quot;新的表单控件&quot;&gt;&lt;a href=&quot;#新的表单控件&quot; class=&quot;headerlink&quot; title=&quot;新的表单控件&quot;&gt;&lt;/a&gt;新的表单控件&lt;/h2&gt;&lt;p&gt;HTML5 拥有多个新的表单输入类型。主要是控制input表单的type类型里的值。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Input 类型-email&lt;/p&gt;
+&lt;p&gt;  当用户在表单里输入邮箱时，会自动提醒邮箱的格式是否正确，而不需要像以前那样用js或者php来进行表单验证。但这样的话，样式我目前还不到能否进行控制。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE HTML&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;form&amp;gt;E-mail: &amp;lt;input type=&amp;quot;email&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;input type=&amp;quot;submit&amp;quot; /&amp;gt;
+&amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;  &lt;pre&gt;&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;body&gt;&lt;form&gt;E-mail: &lt;input type=&quot;email&quot;&gt;&lt;br&gt;&lt;input type=&quot;submit&quot;&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Input 类型 - url&lt;/p&gt;
+&lt;p&gt;  url是判断输入地址是否为网址。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE HTML&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;form&amp;gt;
+url: &amp;lt;input type=&amp;quot;url&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;input type=&amp;quot;submit&amp;quot; /&amp;gt;
+&amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;  &lt;pre&gt;&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;body&gt;&lt;form&gt;url: &lt;input type=&quot;url&quot;&gt;&lt;br&gt;&lt;input type=&quot;submit&quot;&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Input 类型 - number&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE HTML&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;form&amp;gt;
+number: &amp;lt;input type=&amp;quot;number&amp;quot;  min=&amp;quot;-1&amp;quot; max=&amp;quot;10&amp;quot; step=&amp;quot;3&amp;quot; value=&amp;quot;2&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;input type=&amp;quot;submit&amp;quot; /&amp;gt;
+&amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;  &lt;pre&gt;&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;body&gt;&lt;form&gt;number: &lt;input type=&quot;number&quot; min=&quot;-1&quot; max=&quot;10&quot; step=&quot;3&quot; value=&quot;2&quot;&gt;&lt;br&gt;&lt;input type=&quot;submit&quot;&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Input 类型 - range&lt;/p&gt;
+&lt;p&gt;  这是个我认为很神奇的东西，很简单的就实现了如音量控制，进度条的数据传输。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE HTML&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;form&amp;gt;
+points: &amp;lt;input type=&amp;quot;range&amp;quot;  min=&amp;quot;1&amp;quot; max=&amp;quot;10&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;input type=&amp;quot;submit&amp;quot; /&amp;gt;
+&amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;  &lt;pre&gt;&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;body&gt;&lt;form&gt;points: &lt;input type=&quot;range&quot; min=&quot;1&quot; max=&quot;10&quot;&gt;&lt;br&gt;&lt;input type=&quot;submit&quot;&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Input 类型 - Date Pickers（日期选择器）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE HTML&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;form&amp;gt;
+date: &amp;lt;input type=&amp;quot;date&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+time: &amp;lt;input type=&amp;quot;time&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+datetime-local: &amp;lt;input type=&amp;quot;datetime-local&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+week: &amp;lt;input type=&amp;quot;week&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;input type=&amp;quot;submit&amp;quot; /&amp;gt;
+&amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;  &lt;pre&gt;&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;body&gt;&lt;form&gt;date: &lt;input type=&quot;date&quot;&gt;&lt;br&gt;time: &lt;input type=&quot;time&quot;&gt;&lt;br&gt;datetime-local: &lt;input type=&quot;datetime-local&quot;&gt;&lt;br&gt;week: &lt;input type=&quot;week&quot;&gt;&lt;br&gt;&lt;input type=&quot;submit&quot;&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Input 类型 - search&lt;/p&gt;
+&lt;p&gt;  search 类型用于搜索域，比如站点搜索或 Google 搜索&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE HTML&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;form&amp;gt;
+Search&amp;lt;input type=&amp;quot;search&amp;quot; placeholder=&amp;quot;测试搜索&amp;quot; autosave=&amp;quot;aoao.org.cn&amp;quot; result=&amp;quot;8&amp;quot;&amp;gt;
+&amp;lt;input type=&amp;quot;submit&amp;quot; name=&amp;quot;Search&amp;quot; value=&amp;quot;Search&amp;quot;/&amp;gt;
+&amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;pre&amp;gt;&amp;lt;!DOCTYPE HTML&amp;gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;form&amp;gt;Search&amp;lt;input type=&amp;quot;search&amp;quot; placeholder=&amp;quot;测试搜索&amp;quot;autosave=&amp;quot;aoao.org.cn&amp;quot; result=&amp;quot;8&amp;quot;&amp;gt;&amp;lt;input type=&amp;quot;submit&amp;quot; name=&amp;quot;Search&amp;quot; value=&amp;quot;Search&amp;quot;/&amp;gt;&amp;lt;/form&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;音频、视频API&quot;&gt;&lt;a href=&quot;#音频、视频API&quot; class=&quot;headerlink&quot; title=&quot;音频、视频API&quot;&gt;&lt;/a&gt;音频、视频API&lt;/h2&gt;&lt;p&gt;今天，大多数视频是通过插件（比如 Flash）来显示的。然而，并非所有浏览器都拥有同样的插件。&lt;/p&gt;
+&lt;p&gt;HTML5 规定了一种通过 video 元素来包含视频的标准方法&lt;/p&gt;
+&lt;p&gt;一般要插入一段视频，可以这样做&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE HTML&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;video src=&amp;quot;/i/movie.ogg&amp;quot;  width=&amp;quot;320&amp;quot; height=&amp;quot;240&amp;quot; controls=&amp;quot;controls&amp;quot;&amp;gt;
+Your browser does not support the video tag.
+&amp;lt;/video&amp;gt;
+
+&amp;lt;audio src=&amp;quot;/i/song.ogg&amp;quot; controls=&amp;quot;controls&amp;quot;&amp;gt;
+Your browser does not support the audio element.
+&amp;lt;/audio&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;control 属性供添加播放、暂停和音量控件，video 与 video之间插入的内容是供不支持 video 元素的浏览器显示的。audio也是一样的。其中更多的是对video和audio属性的记忆，自己以前也在更改视频播放那些控件的样式花了不少功夫。&lt;/p&gt;
+&lt;h2 id=&quot;画布-Canvas-API&quot;&gt;&lt;a href=&quot;#画布-Canvas-API&quot; class=&quot;headerlink&quot; title=&quot;画布(Canvas) API&quot;&gt;&lt;/a&gt;画布(Canvas) API&lt;/h2&gt;&lt;h3 id=&quot;canvas&quot;&gt;&lt;a href=&quot;#canvas&quot; class=&quot;headerlink&quot; title=&quot;canvas&quot;&gt;&lt;/a&gt;canvas&lt;/h3&gt;&lt;p&gt;canvas 元素用于在网页上绘制图形。&lt;/p&gt;
+&lt;p&gt;HTML5 的 canvas 元素使用 JavaScript 在网页上绘制图像。&lt;/p&gt;
+&lt;h3 id=&quot;SVG&quot;&gt;&lt;a href=&quot;#SVG&quot; class=&quot;headerlink&quot; title=&quot;SVG&quot;&gt;&lt;/a&gt;SVG&lt;/h3&gt;&lt;p&gt;在浏览器中创建图形还可以用SVG&lt;/p&gt;
+&lt;p&gt;SVG 是一种使用 XML 描述 2D 图形的语言。&lt;/p&gt;
+&lt;h2 id=&quot;拖拽释放-Drag-and-drop-API&quot;&gt;&lt;a href=&quot;#拖拽释放-Drag-and-drop-API&quot; class=&quot;headerlink&quot; title=&quot;拖拽释放(Drag and drop) API&quot;&gt;&lt;/a&gt;拖拽释放(Drag and drop) API&lt;/h2&gt;&lt;p&gt;在 HTML5 中，&lt;strong&gt;任何元素都能够拖放&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;要设置一个元素能够被拖放，需要进行五个步骤&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;设置元素为可拖放&lt;/p&gt;
+&lt;p&gt; img的draggable属性设置为true&lt;/p&gt;
+&lt;p&gt; &lt;code&gt;&amp;lt;img draggable=&amp;quot;true&amp;quot; /&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;设置拖动的对象 - ondragstart 和 setData()&lt;/p&gt;
+&lt;p&gt; 拖动元素数据类型是 Text，值是可拖动元素的 id。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function drag(ev){
+ev.dataTransfer.setData(&amp;quot;Text&amp;quot;,ev.id);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;放到何处 - ondragover&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;event.preventDefault()
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;进行放置 - ondrop&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData(&amp;quot;Text&amp;quot;);
+ev.target.appendChild(document.getElementById(data));
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;设置一个元素可拖动还是有点复杂，不过大致的过程很简单，详细的教程可以参照：&lt;a href=&quot;http://blog.csdn.net/lmj623565791/article/details/31413767&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/lmj623565791/article/details/31413767 &lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;CSS3新特性&quot;&gt;&lt;a href=&quot;#CSS3新特性&quot; class=&quot;headerlink&quot; title=&quot;CSS3新特性&quot;&gt;&lt;/a&gt;CSS3新特性&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;CSS3 边框&lt;/li&gt;
+&lt;li&gt;CSS3 背景&lt;/li&gt;
+&lt;li&gt;CSS3 文本效果&lt;/li&gt;
+&lt;li&gt;CSS3 字体&lt;/li&gt;
+&lt;li&gt;CSS3 动画&lt;/li&gt;
+&lt;li&gt;CSS3 多列&lt;/li&gt;
+&lt;li&gt;CSS3 用户界面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;CSS3-边框&quot;&gt;&lt;a href=&quot;#CSS3-边框&quot; class=&quot;headerlink&quot; title=&quot;CSS3 边框&quot;&gt;&lt;/a&gt;CSS3 边框&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;border-radius&lt;/li&gt;
+&lt;li&gt;box-shadow&lt;/li&gt;
+&lt;li&gt;border-image&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;CSS3-圆角边框&quot;&gt;&lt;a href=&quot;#CSS3-圆角边框&quot; class=&quot;headerlink&quot; title=&quot;CSS3 圆角边框&quot;&gt;&lt;/a&gt;CSS3 圆角边框&lt;/h3&gt;&lt;p&gt;border-radius属性&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;CSS3圆角只需设置一个属性：border-radius（含义是”边框半径”）。你为这个属性提供一个值，就能同时设置四个圆角的半径。所有合法的CSS度量值都可以使用：em、ex、pt、px、百分比等等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol&gt;
+&lt;li&gt;border-radius可以同时设置1到4个值。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol&gt;
+&lt;li&gt;如果设置一个值，表示4个圆角都使用这个值。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;如果设置两个值，表示左上角和右下角使用第一个值，右上角和左下角使用第二个值。
+
+如果设置三个值，表示左上角使用第一个值，右上角和左下角使用第二个值，右下角使用第三个值。
+
+如果设置四个值，则依次对应左上角、右上角、右下角、左下角（顺时针顺序）。
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;除了同时设置四个圆角以外，还可以单独对每个角进行设置。对应四个角，CSS3提供四个单独的属性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;border-top-left-radius
+　　&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;border-top-right-radius
+　　&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;border-bottom-right-radius
+　　&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;border-bottom-left-radius&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;这四个属性都可以同时设置1到2个值。如果设置1个值，表示水平半径与垂直半径相等。如果设置2个值，第一个值表示水平半径，第二个值表示垂直半径。
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;另外，并非所有浏览器，都支持将圆角半径设为一个百分比值。&lt;br&gt;因此，目前最安全的做法，就是将每个圆角边框的风格和宽度，都设为一样的值，并且避免使用百分比值。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;   div{
+border:2px solid;// background: #8AC007;
+border-radius:25px;
+-moz-border-radius:25px; /* Old Firefox */
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  关于椭圆边角：&lt;a href=&quot;http://www.ruanyifeng.com/blog/2010/12/detailed_explanation_of_css3_rounded_corners.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ruanyifeng.com/blog/2010/12/detailed_explanation_of_css3_rounded_corners.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;CSS3-边框阴影&quot;&gt;&lt;a href=&quot;#CSS3-边框阴影&quot; class=&quot;headerlink&quot; title=&quot;CSS3 边框阴影&quot;&gt;&lt;/a&gt;CSS3 边框阴影&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;div{box-shadow: 10px 10px 5px #888888;}
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;CSS3 的 box-shadow 有点类似于 text-shadow，只不过不同的是 text-shadow 是对象的文本设置阴影，而 box-shadow 是给对象实现图层阴影效果。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;box-shadow具体使用方法，语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;box-shadow:inset x-offset y-offset blur-radius spread-radius color
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;对象选择器 {box-shadow:投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色}&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;box-shadow属性至多有6个参数设置，他们分别取值：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;阴影类型&lt;/strong&gt;：此参数是一个可选值，如果不设值，其默认的投影方式是外阴影；如果取其唯一值“inset”,就是将外阴影变成内阴影，也就是说设置阴影类型为“inset”时，其投影就是内阴影；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;X-offset&lt;/strong&gt;:是指阴影水平偏移量其值可以是正负值可以取正负值，如果值为正值，则阴影在对象的右边，反之其值为负值时，阴影在对象的左边；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Y-offset&lt;/strong&gt;:是指阴影的垂直偏移量，其值也可以是正负值，如果为正值，阴影在对象的底部，反之其值为负值时，阴影在对象的顶部；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;阴影模糊半径&lt;/strong&gt;：此参数是可选，，但其值只能是为正值，如果其值为0时，表示阴影不具有模糊效果，其值越大阴影的边缘就越模糊；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;阴影扩展半径&lt;/strong&gt;：此参数可选，其值可以是正负值，如果值为正，则整个阴影都延展扩大，反之值为负值是，则缩小&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;注释&lt;/strong&gt;：当阴影类型选为inset时，阴影水平偏移量为正值时，阴影是在对象的左边框的里面（左边框的右边）和上边框的里面（上边框的底部），为负值时则相反；此理解和上面理解的正值在对象右边显示，负值在对象左边显示为同一个道理，我只是将它和边框联系起来解释而已。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.einput{
+ width:120px;
+ height:33px;
+ line-height:33px;
+ padding-left:10px;
+ color:#b4b4b4;
+ border: 1px solid #939393;
+ border-radius:4px;
+ box-shadow:inset 1px 1px 4px #d9d9d9;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;style&gt;.einput{width:120px;height:33px;line-height:33px;padding-left:10px;color:#b4b4b4;border: 1px solid #939393;border-radius:4px;box-shadow:inset 1px 1px 4px #d9d9d9;}&lt;/style&gt;&lt;body&gt;&lt;form&gt;&lt;input class=&quot;einput&quot;&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;    
+
+&lt;p&gt;若是想要四个边框都有阴影可以写多个阴影样式，在它们之间加个“，”号即可，例如：&lt;/p&gt;
+&lt;p&gt;box-shadow:inset 1px 1px 4px #d9d9d9，inset 1px 1px 4px #d9d9d9;同时为内阴影&lt;/p&gt;
+&lt;p&gt;box-shadow:inset 1px 1px 4px #d9d9d9，1px 1px 4px #d9d9d9;内阴影和外阴影&lt;/p&gt;
+&lt;h3 id=&quot;CSS3-边框图片&quot;&gt;&lt;a href=&quot;#CSS3-边框图片&quot; class=&quot;headerlink&quot; title=&quot;CSS3 边框图片&quot;&gt;&lt;/a&gt;CSS3 边框图片&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;div
+{
+border-image:url(border.png) 30 30 round;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;border-image主要是用图片来填充边框&lt;/li&gt;
+&lt;li&gt;border-image的分解属性分别为&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;border-image-source 指定border的背景图的url&lt;/p&gt;
+&lt;p&gt;  这个是指定border的背景图的url,&lt;/p&gt;
+&lt;p&gt;  例:&lt;br&gt;  border-image-source ：url(../images/border.gif);&lt;/p&gt;
+&lt;p&gt;  这里可以设置为none,也就是无背景图&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;border-image-slice   设置图片如何切割的属性，非定位！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;border-image-width  定义border-image的显示区域的&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;border-image-repeat&lt;/p&gt;
+&lt;p&gt;  repeat有三个值选择&lt;/p&gt;
+&lt;p&gt;  [ stretch | repeat | round ]：拉伸 | 重复 | 平铺 (其中stretch是默认值。)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;CSS3-背景&quot;&gt;&lt;a href=&quot;#CSS3-背景&quot; class=&quot;headerlink&quot; title=&quot;CSS3 背景&quot;&gt;&lt;/a&gt;CSS3 背景&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;background-size&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;background-origin&lt;/p&gt;
+&lt;h3 id=&quot;background-size&quot;&gt;&lt;a href=&quot;#background-size&quot; class=&quot;headerlink&quot; title=&quot;background-size&quot;&gt;&lt;/a&gt;background-size&lt;/h3&gt;&lt;p&gt;调整背景图片的大小：&lt;/p&gt;
+&lt;p&gt; div&lt;br&gt; {&lt;br&gt; background:url(bg_flower.gif);&lt;br&gt; background-size:63px 100px;&lt;br&gt; background-repeat:no-repeat;&lt;br&gt; }&lt;br&gt;对背景图片进行拉伸，使其完成填充内容区域：&lt;/p&gt;
+&lt;p&gt; div&lt;br&gt; {&lt;br&gt; background:url(bg_flower.gif);&lt;br&gt; background-size:40% 100%;&lt;br&gt; background-repeat:no-repeat;&lt;br&gt; }&lt;/p&gt;
+&lt;h3 id=&quot;background-origin&quot;&gt;&lt;a href=&quot;#background-origin&quot; class=&quot;headerlink&quot; title=&quot;background-origin&quot;&gt;&lt;/a&gt;background-origin&lt;/h3&gt;&lt;p&gt;background-origin 属性规定背景图片的定位区域。&lt;br&gt;背景图片可以放置于 content-box、padding-box 或 border-box 区域。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在 content-box 中定位背景图片：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;div
+{
+background:url(bg_flower.gif);
+background-repeat:no-repeat;
+background-size:100% 100%;
+background-origin:content-box;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;为 body 元素设置两幅背景图片：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;body
+{ 
+background-image:url(bg_flower.gif),url(bg_flower_2.gif);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;CSS3-文本效果&quot;&gt;&lt;a href=&quot;#CSS3-文本效果&quot; class=&quot;headerlink&quot; title=&quot;CSS3 文本效果&quot;&gt;&lt;/a&gt;CSS3 文本效果&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;text-shadow&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;word-wrap&lt;/p&gt;
+&lt;h3 id=&quot;text-shadow&quot;&gt;&lt;a href=&quot;#text-shadow&quot; class=&quot;headerlink&quot; title=&quot;text-shadow&quot;&gt;&lt;/a&gt;text-shadow&lt;/h3&gt;&lt;p&gt;规定水平阴影、垂直阴影、模糊距离，以及阴影的颜色：&lt;/p&gt;
+&lt;p&gt; .text&lt;br&gt; {&lt;br&gt; text-shadow: 5px 5px 5px #FF0000;&lt;br&gt; }&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;style&gt;.text
+{text-shadow: 5px 5px 5px #FF0000;}&lt;/style&gt;&lt;body&gt;&lt;h1 class=&quot;text&quot;&gt;时间破碎&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt; 
+### word-wrap CSS3 自动换行 ###
+在 CSS3 中，word-wrap 属性允许您允许文本强制文本进行换行 - 即使这意味着会对单词进行，并换行到下一行：
+
+    .word {
+    width:200px;
+    height:70px;
+    border:1px solid #000;
+    word-wrap:break-word;
+    }
+
+&lt;pre&gt;&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;style&gt; .word {width:200px;
+height:70px;border:1px solid #000;word-wrap:break-word;}&lt;/style&gt;&lt;body&gt;&lt;p class=&quot;word&quot;&gt;He has had to eat his words about the company being recession-proof.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;CSS3-font-face-规则&quot;&gt;&lt;a href=&quot;#CSS3-font-face-规则&quot; class=&quot;headerlink&quot; title=&quot;CSS3 @font-face 规则&quot;&gt;&lt;/a&gt;CSS3 @font-face 规则&lt;/h2&gt;&lt;p&gt;@font-face的作用就是我们可以使用自己设计喜欢的任意字体。&lt;/p&gt;
+&lt;p&gt;在新的 @font-face 规则中，您必须首先定义字体的名称（比如 myFirstFont），然后指向该字体文件。&lt;/p&gt;
+&lt;p&gt;提示：URL请使用小写字母的字体，大写字母在IE中会产生意外的结果&lt;br&gt;如需为 HTML 元素使用字体，请通过 font-family 属性来引用字体的名称 (myFirstFont)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;style&amp;gt; 
+@font-face{
+font-family: myFirstFont;
+src: url(&amp;apos;Sansation_Light.ttf&amp;apos;),
+ url(&amp;apos;Sansation_Light.eot&amp;apos;); /* IE9+ */
+}
+.font{
+     font-family:myFirstFont;
+}
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;HTML5新特性&quot;&gt;&lt;a href=&quot;#HTML5新特性&quot; class=&quot;headerlink&quot; title=&quot;HTML5新特性&quot;&gt;&lt;/a&gt;HTML5新特性&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;新的特殊内容元素&lt;/li&gt;
+&lt;li&gt;新的表单控件&lt;/li&gt;
+&lt;li&gt;音频、视频A
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>css3 study</title>
