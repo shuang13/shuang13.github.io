@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Bootstrap-1 | Hexo</title>
+  <meta name="author" content="John Doe">
+  
+  <meta name="description" content="Bootstrap 学习笔记(1)
+从中学到的CSS在看Bootstrap的教程的时候，发现很多css的知识都不知道，所以在要学好Bootstrap，还是先把这些基础记下来。">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Bootstrap-1"/>
+  <meta property="og:site_name" content="Hexo"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Hexo</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+  	<li> <a href="/atom.xml">RSS</a> </li>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="//about">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-08-08T15:03:53.000Z"><a href="/2016/08/08/Bootstrap-1/">2016-08-08</a></time>
+      
+      
+  
+    <h1 class="title">Bootstrap-1</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        
+        <h1 id="Bootstrap-学习笔记-1"><a href="#Bootstrap-学习笔记-1" class="headerlink" title="Bootstrap 学习笔记(1)"></a>Bootstrap 学习笔记(1)</h1><hr>
+<h2 id="从中学到的CSS"><a href="#从中学到的CSS" class="headerlink" title="从中学到的CSS"></a>从中学到的CSS</h2><p>在看Bootstrap的教程的时候，发现很多css的知识都不知道，所以在要学好Bootstrap，还是先把这些基础记下来。<br><a id="more"></a></p>
+<h4 id="line-height"><a href="#line-height" class="headerlink" title="line-height"></a>line-height</h4><p>line-height 与 font-size 的计算值之差（在 CSS 中成为“行间距”）分为两半，分别加到一个文本行内容的顶部和底部。可以包含这些内容的最小框就是行框。</p>
+<p>一般用到line-height就只有把文本垂直居中，设置行高的像素和包含文本div的高度一样。却一直没用明白行高的含义。</p>
+<p>当line-height的值为数字的时候，此数字会与当前的字体尺寸相乘来设置行间距。这是看到Bootsrap的Body默认样式  </p>
+<pre><code>font-size: 14px;
+line-height: 1.428571429;
+</code></pre><p>才知道。这里行高为20px。</p>
+<h4 id="outline"><a href="#outline" class="headerlink" title="outline"></a>outline</h4><p>outline （轮廓）是绘制于元素周围的一条线，位于<strong>边框边缘的外围</strong>，可起到突出元素的作用。</p>
+<p>轮廓线<strong>不会占据空间</strong>，也不一定是矩形。</p>
+<p>而且我这时候才知道</p>
+<pre><code>outline:#00FF00 dotted thick;
+</code></pre><p>这里颜色，虚线，加厚。顺序是可以变化的，比如我一直写的boder的样式。</p>
+<pre><code>boder:1px sliod #00FF00;
+</code></pre><p>这样也是可以的。</p>
+<p>此外，一直记不住的就是怎样去掉input输入框点击时出现的蓝色外边框。</p>
+<p>这样就行了：</p>
+<pre><code>outline:none
+</code></pre><h4 id="伪类与伪元素"><a href="#伪类与伪元素" class="headerlink" title="伪类与伪元素"></a>伪类与伪元素</h4><p>如今才知道伪类与伪元是有区别的，</p>
+<p><strong>伪类</strong></p>
+<ul>
+<li>：focus(被鼠标选中)</li>
+<li>：hover</li>
+<li>：link</li>
+<li>：first-child等</li>
+</ul>
+<p><strong>伪元素</strong></p>
+<ul>
+<li>：before</li>
+<li>：after等</li>
+</ul>
+<p>发现原来伪类是伴随着事件的，而元素就是元素而已。</p>
+<p>实际上 css3 为了区分两者，已经明确规定了伪类用一个冒号来表示，而伪元素则用两个冒号来表示。但要考虑兼容性。</p>
+<p>像这样</p>
+<pre><code>p：hover
+p::after
+</code></pre><h4 id="属性contenteditable"><a href="#属性contenteditable" class="headerlink" title="属性contenteditable"></a>属性contenteditable</h4><p>contenteditable 属性规定是否可编辑元素的内容。属于html5。</p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;p contenteditable=&quot;true&quot;&gt;这是一段可编辑的段落。请试着编辑该文本。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><pre><html><body><p contenteditable="true">这是一段可编辑的段落。请试着编辑该文本。</p></body></html></pre>
+
+<h4 id="文章标题及格式"><a href="#文章标题及格式" class="headerlink" title="文章标题及格式"></a>文章标题及格式</h4><p>原来语文没学好，至今还不知道标题的格式。像h1,h2,h3，副标题，段落p这些在写网页的时候怎么用都不知道，都是看图看感觉，我觉得有必要记记。</p>
+<p><strong>副标题</strong>要在大标题第三个字下开始写破折号。</p>
+<p>H1标签虽然权重高，但是不可以存在多个.</p>
+<h4 id="text-indent缩进"><a href="#text-indent缩进" class="headerlink" title="text-indent缩进"></a>text-indent缩进</h4><p>text-indent只用于div，p这样的元素上，像image、input、inline-block、inline元素绝对不用。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+        <div class="bdsharebuttonbox">
+  <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+  <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+  <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+  <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+  <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+  <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+  <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+  <a href="#" class="bds_more" data-cmd="more"></a>
+  <a href="#" class="bds_count" data-cmd="count"></a>
+</div>
+<script>
+window._bd_share_config=
+{
+  "common":{
+    "bdSnsKey":{},
+    "bdText":"",
+    "bdMini":"2",
+    "bdMiniList":false,
+    "bdPic":"",
+    "bdStyle":"0",
+    "bdSize":"24"
+  },
+  "share":{},
+  "image":{
+    "viewList":["qzone","tsina","tqq","renren","weixin","fbook","twi"],
+    "viewText":"分享到：",
+    "viewSize":"24"
+  },
+  "selectShare":{
+    "bdContainerClass":null,
+    "bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","fbook","twi"]
+  }
+};
+with(document)0[
+  (getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)
+];
+</script>
+      
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    
+    <a href="/2016/08/08/html5-study/" class="alignright next" >Nächste Seite</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+  
+<!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="2016/08/08/Bootstrap-1/" data-title="Bootstrap-1" data-url="http://shuang13.coding.me/2016/08/08/Bootstrap-1/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"shuang13"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="hidden" name="q" value="site:shuang13.coding.me">
+  </form>
+</div>
+
+  
+
+  
+
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本名：zbb</li>
+<li>QQ  ：794861654</li>
+<li>邮箱：794861654@qq.com</li>
+</ul>
+</div>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zbbwork.com/" title="zbb's Blog">追逐命运的溯流</a></li>
+</ul>
+</div>
+
+  <div class="widget tag">
+<h3 class="title">最新评论</h3>
+<div class="entry">
+<!-- 多说最新评论 start -->
+	<div class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+<!-- 多说最新评论 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"shuang13"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</div>
+</div>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 John Doe
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:20px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+</body>
+</html>
