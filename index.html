@@ -94,7 +94,7 @@
       
       
   
-    <h1 class="title"><a href="/2016/08/08/css学习/">css3 study</a></h1>
+    <h1 class="title"><a href="/2016/08/08/css学习/">CSS的基础学习</a></h1>
   
 
     </header>
@@ -131,13 +131,12 @@
       
       
   
-    <h1 class="title"><a href="/2016/08/06/css3新特性/">CSS3新特性 -边框</a></h1>
+    <h1 class="title"><a href="/2016/08/06/css3新特性/">CSS3新特性</a></h1>
   
 
     </header>
     <div class="entry">
       
-        
         <ul>
 <li>CSS3 边框</li>
 <li>CSS3 背景</li>
@@ -145,182 +144,15 @@
 <li>CSS3 字体</li>
 <li>CSS3 动画</li>
 <li>CSS3 多列</li>
-<li>CSS3 用户界面</li>
-</ul>
-<h2 id="CSS3-边框"><a href="#CSS3-边框" class="headerlink" title="CSS3 边框"></a>CSS3 边框</h2><ol>
-<li>border-radius</li>
-<li>box-shadow</li>
-<li>border-image</li>
-</ol>
-<h3 id="CSS3-圆角边框"><a href="#CSS3-圆角边框" class="headerlink" title="CSS3 圆角边框"></a>CSS3 圆角边框</h3><p>border-radius属性</p>
-<ol>
-<li>CSS3圆角只需设置一个属性：border-radius（含义是”边框半径”）。你为这个属性提供一个值，就能同时设置四个圆角的半径。所有合法的CSS度量值都可以使用：em、ex、pt、px、百分比等等</li>
-</ol>
-<ol>
-<li>border-radius可以同时设置1到4个值。</li>
-</ol>
-<ol>
-<li>如果设置一个值，表示4个圆角都使用这个值。</li>
-</ol>
-<pre><code>如果设置两个值，表示左上角和右下角使用第一个值，右上角和左下角使用第二个值。
-
-如果设置三个值，表示左上角使用第一个值，右上角和左下角使用第二个值，右下角使用第三个值。
-
-如果设置四个值，则依次对应左上角、右上角、右下角、左下角（顺时针顺序）。
-</code></pre><ol>
-<li><p>除了同时设置四个圆角以外，还可以单独对每个角进行设置。对应四个角，CSS3提供四个单独的属性：</p>
-<ul>
-<li>border-top-left-radius
-　　</li>
-<li><p>border-top-right-radius
-　　</p>
-</li>
-<li><p>border-bottom-right-radius
-　　</p>
-</li>
-<li><p>border-bottom-left-radius</p>
-</li>
-</ul>
-</li>
-</ol>
-<pre><code>这四个属性都可以同时设置1到2个值。如果设置1个值，表示水平半径与垂直半径相等。如果设置2个值，第一个值表示水平半径，第二个值表示垂直半径。
-</code></pre><ul>
-<li><p>另外，并非所有浏览器，都支持将圆角半径设为一个百分比值。<br>因此，目前最安全的做法，就是将每个圆角边框的风格和宽度，都设为一样的值，并且避免使用百分比值。</p>
-<pre><code>   div{
-border:2px solid;// background: #8AC007;
-border-radius:25px;
--moz-border-radius:25px; /* Old Firefox */
-}
-</code></pre><p>  关于椭圆边角：<a href="http://www.ruanyifeng.com/blog/2010/12/detailed_explanation_of_css3_rounded_corners.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2010/12/detailed_explanation_of_css3_rounded_corners.html</a></p>
-</li>
-</ul>
-<h3 id="CSS3-边框阴影"><a href="#CSS3-边框阴影" class="headerlink" title="CSS3 边框阴影"></a>CSS3 边框阴影</h3><pre><code>div{box-shadow: 10px 10px 5px #888888;}
-</code></pre><ol>
-<li>CSS3 的 box-shadow 有点类似于 text-shadow，只不过不同的是 text-shadow 是对象的文本设置阴影，而 box-shadow 是给对象实现图层阴影效果。</li>
-</ol>
-<ul>
-<li><p>box-shadow具体使用方法，语法：</p>
-<pre><code>box-shadow:inset x-offset y-offset blur-radius spread-radius color
-</code></pre><p>对象选择器 {box-shadow:投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色}</p>
-</li>
-</ul>
-<p>box-shadow属性至多有6个参数设置，他们分别取值：</p>
-<ul>
-<li><strong>阴影类型</strong>：此参数是一个可选值，如果不设值，其默认的投影方式是外阴影；如果取其唯一值“inset”,就是将外阴影变成内阴影，也就是说设置阴影类型为“inset”时，其投影就是内阴影；</li>
-</ul>
-<ul>
-<li><strong>X-offset</strong>:是指阴影水平偏移量其值可以是正负值可以取正负值，如果值为正值，则阴影在对象的右边，反之其值为负值时，阴影在对象的左边；</li>
-</ul>
-<ul>
-<li><strong>Y-offset</strong>:是指阴影的垂直偏移量，其值也可以是正负值，如果为正值，阴影在对象的底部，反之其值为负值时，阴影在对象的顶部；</li>
-</ul>
-<ul>
-<li><strong>阴影模糊半径</strong>：此参数是可选，，但其值只能是为正值，如果其值为0时，表示阴影不具有模糊效果，其值越大阴影的边缘就越模糊；</li>
-</ul>
-<ul>
-<li><strong>阴影扩展半径</strong>：此参数可选，其值可以是正负值，如果值为正，则整个阴影都延展扩大，反之值为负值是，则缩小</li>
-</ul>
-<p><strong>注释</strong>：当阴影类型选为inset时，阴影水平偏移量为正值时，阴影是在对象的左边框的里面（左边框的右边）和上边框的里面（上边框的底部），为负值时则相反；此理解和上面理解的正值在对象右边显示，负值在对象左边显示为同一个道理，我只是将它和边框联系起来解释而已。</p>
-<pre><code>.einput{
- width:120px;
- height:33px;
- line-height:33px;
- padding-left:10px;
- color:#b4b4b4;
- border: 1px solid #939393;
- border-radius:4px;
- box-shadow:inset 1px 1px 4px #d9d9d9;
-}
-</code></pre><pre><!DOCTYPE HTML><html><style>.einput{width:120px;height:33px;line-height:33px;padding-left:10px;color:#b4b4b4;border: 1px solid #939393;border-radius:4px;box-shadow:inset 1px 1px 4px #d9d9d9;}</style><body><form><input class="einput"></form></body></html></pre>    
-
-<p>若是想要四个边框都有阴影可以写多个阴影样式，在它们之间加个“，”号即可，例如：</p>
-<p>box-shadow:inset 1px 1px 4px #d9d9d9，inset 1px 1px 4px #d9d9d9;同时为内阴影</p>
-<p>box-shadow:inset 1px 1px 4px #d9d9d9，1px 1px 4px #d9d9d9;内阴影和外阴影</p>
-<h3 id="CSS3-边框图片"><a href="#CSS3-边框图片" class="headerlink" title="CSS3 边框图片"></a>CSS3 边框图片</h3><pre><code>div
-{
-border-image:url(border.png) 30 30 round;
-}
-</code></pre><ul>
-<li>border-image主要是用图片来填充边框</li>
-<li>border-image的分解属性分别为</li>
-<li><p>border-image-source 指定border的背景图的url</p>
-<p>  这个是指定border的背景图的url,</p>
-<p>  例:<br>  border-image-source ：url(../images/border.gif);</p>
-<p>  这里可以设置为none,也就是无背景图</p>
-</li>
-<li><p>border-image-slice   设置图片如何切割的属性，非定位！</p>
-</li>
-<li>border-image-width  定义border-image的显示区域的</li>
-<li><p>border-image-repeat</p>
-<p>  repeat有三个值选择</p>
-<p>  [ stretch | repeat | round ]：拉伸 | 重复 | 平铺 (其中stretch是默认值。)</p>
-</li>
-</ul>
-<h2 id="CSS3-背景"><a href="#CSS3-背景" class="headerlink" title="CSS3 背景"></a>CSS3 背景</h2><ol>
-<li>background-size</li>
-<li><p>background-origin</p>
-<h3 id="background-size"><a href="#background-size" class="headerlink" title="background-size"></a>background-size</h3><p>调整背景图片的大小：</p>
-<p> div<br> {<br> background:url(bg_flower.gif);<br> background-size:63px 100px;<br> background-repeat:no-repeat;<br> }<br>对背景图片进行拉伸，使其完成填充内容区域：</p>
-<p> div<br> {<br> background:url(bg_flower.gif);<br> background-size:40% 100%;<br> background-repeat:no-repeat;<br> }</p>
-<h3 id="background-origin"><a href="#background-origin" class="headerlink" title="background-origin"></a>background-origin</h3><p>background-origin 属性规定背景图片的定位区域。</p>
-</li>
-</ol>
-<p><img src="http://www.runoob.com/images/background-origin.gif" alt=""></p>
-<p>背景图片可以放置于 content-box、padding-box 或 border-box 区域。</p>
-<p>在 content-box 中定位背景图片：</p>
-<pre><code>div
-{
-background:url(bg_flower.gif);
-background-repeat:no-repeat;
-background-size:100% 100%;
-background-origin:content-box;
-}
-</code></pre><p>为 body 元素设置两幅背景图片：</p>
-<pre><code>body
-{ 
-background-image:url(bg_flower.gif),url(bg_flower_2.gif);
-}
-</code></pre><h2 id="CSS3-文本效果"><a href="#CSS3-文本效果" class="headerlink" title="CSS3 文本效果"></a>CSS3 文本效果</h2><ol>
-<li>text-shadow</li>
-<li><p>word-wrap</p>
-<h3 id="text-shadow"><a href="#text-shadow" class="headerlink" title="text-shadow"></a>text-shadow</h3><p>规定水平阴影、垂直阴影、模糊距离，以及阴影的颜色：</p>
-<p> .text<br> {<br> text-shadow: 5px 5px 5px #FF0000;<br> }</p>
-</li>
-</ol>
-<pre><!DOCTYPE HTML><html><style>.text
-{text-shadow: 5px 5px 5px #FF0000;}</style><body><h1 class="text">时间破碎</h1></body></html></pre> 
-### word-wrap CSS3 自动换行 ###
-在 CSS3 中，word-wrap 属性允许您允许文本强制文本进行换行 - 即使这意味着会对单词进行，并换行到下一行：
-
-    .word {
-    width:200px;
-    height:70px;
-    border:1px solid #000;
-    word-wrap:break-word;
-    }
-
-<pre><!DOCTYPE HTML><html><style> .word {width:200px;
-height:70px;border:1px solid #000;word-wrap:break-word;}</style><body><p class="word">He has had to eat his words about the company being recession-proof.</p></body></html></pre>
-
-<h2 id="CSS3-font-face-规则"><a href="#CSS3-font-face-规则" class="headerlink" title="CSS3 @font-face 规则"></a>CSS3 @font-face 规则</h2><p>@font-face的作用就是我们可以使用自己设计喜欢的任意字体。</p>
-<p>在新的 @font-face 规则中，您必须首先定义字体的名称（比如 myFirstFont），然后指向该字体文件。</p>
-<p>提示：URL请使用小写字母的字体，大写字母在IE中会产生意外的结果<br>如需为 HTML 元素使用字体，请通过 font-family 属性来引用字体的名称 (myFirstFont)</p>
-<pre><code>&lt;style&gt; 
-@font-face{
-font-family: myFirstFont;
-src: url(&apos;Sansation_Light.ttf&apos;),
- url(&apos;Sansation_Light.eot&apos;); /* IE9+ */
-}
-.font{
-     font-family:myFirstFont;
-}
-&lt;/style&gt;
-</code></pre><hr>
-
+<li>CSS3 用户界面
       
     </div>
     <footer>
       
+        
+          <div class="alignleft">
+            <a href="/2016/08/06/css3新特性/#more" class="more-link">Read More</a>
+          </div>
         
         
       
@@ -425,7 +257,7 @@ src: url(&apos;Sansation_Light.ttf&apos;),
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="search" name="q" results="0" placeholder="Suche">
     <input type="hidden" name="q" value="site:shuang13.coding.me">
   </form>
 </div>
