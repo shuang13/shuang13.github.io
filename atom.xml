@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shuang13.coding.me/"/>
-  <updated>2016-08-08T14:10:30.694Z</updated>
+  <updated>2016-08-08T14:12:50.836Z</updated>
   <id>http://shuang13.coding.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://shuang13.coding.me/2016/08/08/css3-study/"/>
     <id>http://shuang13.coding.me/2016/08/08/css3-study/</id>
     <published>2016-08-08T12:34:14.000Z</published>
-    <updated>2016-08-08T14:10:30.694Z</updated>
+    <updated>2016-08-08T14:12:50.836Z</updated>
     
     <content type="html">&lt;h1 id=&quot;CSS的基础学习&quot;&gt;&lt;a href=&quot;#CSS的基础学习&quot; class=&quot;headerlink&quot; title=&quot;CSS的基础学习&quot;&gt;&lt;/a&gt;CSS的基础学习&lt;/h1&gt;&lt;h2 id=&quot;前文&quot;&gt;&lt;a href=&quot;#前文&quot; class=&quot;headerlink&quot; title=&quot;前文&quot;&gt;&lt;/a&gt;前文&lt;/h2&gt;&lt;p&gt;css包含许多东西，自己也知道在css方面基础不够扎实，本周的学习我计划从几个我自认为不足的方面进行学习，在css的基本语法方面我就不进行过多的学习了。然后在学习中的例子，保证自己亲手把代码打出来，不要只是复制粘贴，希望以此能记得牢一些。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;CSS的命名与书写规范&quot;&gt;&lt;a href=&quot;#CSS的命名与书写规范&quot; class=&quot;headerlink&quot; title=&quot;CSS的命名与书写规范&quot;&gt;&lt;/a&gt;CSS的命名与书写规范&lt;/h2&gt;&lt;p&gt;我觉得在写网页的时候，书写规范是十分重要的，既能保证自己的清晰思路，也能让别人更好的看懂你的代码。但我对这方面也没重视过，当回去看自己原来的代码时，才发现有多么的头疼。所以自己总结了一下：&lt;/p&gt;
@@ -334,7 +334,7 @@ margin:10px;
 &lt;h3 id=&quot;浮动&quot;&gt;&lt;a href=&quot;#浮动&quot; class=&quot;headerlink&quot; title=&quot;浮动&quot;&gt;&lt;/a&gt;浮动&lt;/h3&gt;&lt;p&gt;CSS允许任何元素浮动，浮动元素相当于会从正常的文本流中删除。最开始float是用来做文字环绕效果的。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;img src=&amp;quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&amp;quot; style=&amp;quot;width:100px;float:left;&amp;quot; &amp;gt;
 &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;html&gt;&lt;br&gt;&lt;body&gt;&lt;br&gt;&lt;div&gt;&lt;img src=&quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&quot; style=&quot;width:100px;float:left;&quot;&gt;蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;/body&gt;&lt;br&gt;&lt;/html&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;html&gt;&lt;br&gt;&lt;body&gt;&lt;br&gt;&lt;div&gt;&lt;img src=&quot;http://img3.imgtn.bdimg.com/it/u=4109883987,3297169276&amp;fm=11&amp;gp=0.jpg&quot; style=&quot;width:100px;float:left;&quot;&gt;蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆蕾姆&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;/body&gt;&lt;br&gt;&lt;/html&gt;
 
 &lt;p&gt;&lt;strong&gt;float主要用于横向排版、或者多列布局，虽然好用，但也有很多问题，比如浮动会造成的父元素高度塌陷。&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;div style=&amp;quot;border:1px solid #000;padding:10px;&amp;quot; &amp;gt;&amp;lt;img src=&amp;quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&amp;quot; style=&amp;quot;width:100px;&amp;quot; &amp;gt;
@@ -344,13 +344,13 @@ margin:10px;
 &lt;p&gt;&lt;strong&gt;加上浮动&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;div style=&amp;quot;border:1px solid #000;padding:10px;&amp;quot; &amp;gt;&amp;lt;img src=&amp;quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&amp;quot; style=&amp;quot;width:100px;float:left;&amp;quot; &amp;gt;
 &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;html&gt;&lt;body&gt;&lt;div style=&quot;border:1px solid #000;padding:10px;&quot;&gt;&lt;img src=&quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&quot; style=&quot;width:100px;float:left;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;html&gt;&lt;body&gt;&lt;div style=&quot;border:1px solid #000;padding:10px;&quot;&gt;&lt;img src=&quot;http://img3.imgtn.bdimg.com/it/u=4109883987,3297169276&amp;fm=11&amp;gp=0.jpg&quot; style=&quot;width:100px;float:left;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;加上浮动后，父元素出现了坍塌现象，主要是因为float让元素脱离了文本流。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;当对父级元素加上float后，会出现包裹性。&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;div style=&amp;quot;border:1px solid #000;padding:10px;float:left;&amp;quot; &amp;gt;&amp;lt;img src=&amp;quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&amp;quot; style=&amp;quot;width:100px;&amp;quot; &amp;gt;
 &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;html&gt;&lt;body&gt;&lt;div style=&quot;border:1px solid #000;padding:10px;float:left;&quot;&gt;&lt;img src=&quot;http://img3.duitang.com/uploads/item/201606/17/20160617162436_JcNwY.thumb.700_0.jpeg&quot; style=&quot;width:100px;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;html&gt;&lt;body&gt;&lt;div style=&quot;border:1px solid #000;padding:10px;float:left;&quot;&gt;&lt;img src=&quot;http://img3.imgtn.bdimg.com/it/u=4109883987,3297169276&amp;fm=11&amp;gp=0.jpg&quot; style=&quot;width:100px;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;另外float还具有清空格的作用，如img之间默认会有空格，添加float后就会排布紧密了。&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&quot;清除浮动&quot;&gt;&lt;a href=&quot;#清除浮动&quot; class=&quot;headerlink&quot; title=&quot;清除浮动&quot;&gt;&lt;/a&gt;清除浮动&lt;/h3&gt;&lt;p&gt;清除浮动有很多方法，有的博客都列举了8个多，我觉得掌握几个基本的就可以了，其他有些也很麻烦，只做了解。常见的方法先列举几个。&lt;/p&gt;
