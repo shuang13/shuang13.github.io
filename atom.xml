@@ -1104,26 +1104,6 @@ background-color:yellow;
   </entry>
   
   <entry>
-    <title>讲座 -李晓东</title>
-    <link href="http://shuang13.coding.me/2015/11/25/%E8%AE%B2%E5%BA%A7-%E6%9D%8E%E6%99%93%E4%B8%9C/"/>
-    <id>http://shuang13.coding.me/2015/11/25/讲座-李晓东/</id>
-    <published>2015-11-25T15:03:53.000Z</published>
-    <updated>2016-08-09T04:12:06.480Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;img src=&quot;http://shuang13.coding.me/imgs/tmpdir--16_8_9_11_53_12.jpg&quot; width=&quot;30%&quot;&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://shuang13.coding.me/imgs/tmpdir--16_8_9_11_53_12.jpg&quot; width=&quot;30%&quot;&gt;&lt;/p&gt;
-
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Web前端开发规范文档你需要知道的事--HTML、css、js、文档等需要规范内容</title>
     <link href="http://shuang13.coding.me/2015/11/25/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83%E6%96%87%E6%A1%A3/"/>
     <id>http://shuang13.coding.me/2015/11/25/Web前端开发规范文档/</id>
@@ -1382,6 +1362,26 @@ FireFox&amp;amp;IE6&amp;amp;IE7&amp;amp;IE8&amp;amp;IE9&amp;amp;Opera&amp;amp;Ch
     <summary type="html">
     
       &lt;p&gt;一直以来认为一名合格的seo是必须懂代码的，甚至要懂得自己如何有效的设置一个合理的网站，这样才能使得我们的代码、结构优化更加的合理！今天伯乐网推荐一篇文章，虽然对我这个菜鸟来说一些看不懂，但是能看懂的（html 、css等）觉得很有意义，下面我就直接转载全文给大家分享一下！&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>讲座 -李晓东</title>
+    <link href="http://shuang13.coding.me/2015/11/25/%E8%AE%B2%E5%BA%A7-%E6%9D%8E%E6%99%93%E4%B8%9C/"/>
+    <id>http://shuang13.coding.me/2015/11/25/讲座-李晓东/</id>
+    <published>2015-11-25T15:03:53.000Z</published>
+    <updated>2016-08-09T04:12:06.480Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://shuang13.coding.me/imgs/tmpdir--16_8_9_11_53_12.jpg&quot; width=&quot;30%&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://shuang13.coding.me/imgs/tmpdir--16_8_9_11_53_12.jpg&quot; width=&quot;30%&quot;&gt;&lt;/p&gt;
+
     
     </summary>
     
