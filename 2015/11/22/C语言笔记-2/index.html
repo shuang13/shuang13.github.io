@@ -3,16 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Star Hexo | Dye Cream</title>
+  <title>C语言 学习笔记(1) | Dye Cream</title>
   <meta name="author" content="zbb">
   
-  <meta name="description" content="偶然的机会，了解到可以用github或者cording搭建博客，同时，我自己之前的博客，可能是服务器出了些问题，也导致我的博客一直无法登陆。于是，想到自己重建一个博客，托管在cording上，这下总不会出问题了吧。通过学习，用hexo搭建博客的教程的途中，依然出现了一些问题，不过一次失败，再全部删掉，重新再来一遍，利用已有的经验，第二次，就非常快速简单的成功了，心中非常高兴。主题我也摒弃繁杂华丽，改为简约大气风。管理起来，方便一些，看着也舒服。
-详细教程：http://opiece.me/2015/04/09/hexo-guide/">
+  <meta name="description" content="下面是道算法题：">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Star Hexo"/>
+  <meta property="og:title" content="C语言 学习笔记(1)"/>
   <meta property="og:site_name" content="Dye Cream"/>
 
   
@@ -55,20 +54,71 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-06-13T15:50:35.867Z"><a href="/2016/06/13/Start Hexo/">2016-06-13</a></time>
+        <time datetime="2015-11-22T08:35:00.000Z"><a href="/2015/11/22/C语言笔记-2/">2015-11-22</a></time>
       
       
   
-    <h1 class="title">Star Hexo</h1>
+    <h1 class="title">C语言 学习笔记(1)</h1>
   
 
     </header>
     <div class="entry">
       
         
-        <p>偶然的机会，了解到可以用github或者cording搭建博客，同时，我自己之前的博客，可能是服务器出了些问题，也导致我的博客一直无法登陆。于是，想到自己重建一个博客，托管在cording上，这下总不会出问题了吧。<br>通过学习，用hexo搭建博客的教程的途中，依然出现了一些问题，不过一次失败，再全部删掉，重新再来一遍，利用已有的经验，第二次，就非常快速简单的成功了，心中非常高兴。主题我也摒弃繁杂华丽，改为简约大气风。管理起来，方便一些，看着也舒服。</p>
-<p>详细教程：<a href="http://opiece.me/2015/04/09/hexo-guide/" target="_blank" rel="external">http://opiece.me/2015/04/09/hexo-guide/</a><br><a id="more"></a></p>
-<p>最后通过这个博客，希望把大学生活的一些有意义的东西记载下来，技术上的，文学上的，生活上的，都好好的保存在这个博客上，这比用那些奖状来证明自己真实、有意义得多。</p>
+        <p>下面是道算法题：<br><a id="more"></a><br>![2015-11-20_17-11-59.png][1]<br>我先用c++编写；</p>
+<pre><code>#include &lt;iostream.h&gt;
+void main()
+{
+    char i,j,a[200],ch=&apos; &apos;,t=0;
+    cin.getline(a,200);
+    for (i=0;a[i]!=&apos;\0&apos;;i++)
+    {if (a[i]==&apos;W&apos;&amp;&amp;a[i+1]==&apos;U&apos;&amp;&amp;a[i+2]==&apos;B&apos;)
+        {   a[i]=&apos; &apos;;
+            a[i+1]=a[i];
+            a[i+2]=a[i+1];//用空格替换掉，但就有三个空格了
+            delet(a,&apos; &apos;);//删除空格，这时所有字符连在一起
+            cout&lt;&lt;&quot; &quot;;//为了在删除点制造一个空格}
+        cout&lt;&lt;a[i];}
+cout&lt;&lt;a[0];
+
+}
+void delet(char a[],char ch)//删除指定字符
+{
+    int i,j;
+    for(i=j=0;a[i]!=&apos;\0&apos;;i++)
+    {
+        if(a[i]!=ch)
+            a[j++]=a[i];
+    }
+    a[j]=&apos;\0&apos;;    
+}
+</code></pre><p>但当为WUBWUBIWUBLOVEWUBYOU会变为  I LOVE YOU；</p>
+<p>I前面会有空格，不符合题意；看来还是失败了TAT;</p>
+<p>查了一个看起来简洁的答案</p>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main()
+{
+char s[200];
+int a, b, i, j, k;
+scanf(&quot;%s&quot;, s);
+k = strlen(s);
+a = 0;
+b = 0;
+for(i = 0; i &lt; k; i++)
+{if(s[i]==&apos;W&apos;&amp;&amp;s[i+1]==&apos;U&apos;&amp;&amp;s[i+2]==&apos;B&apos;)
+{if(b != 0&amp;&amp;a!=1)
+printf(&quot; &quot;);i = i + 2;a = 1;
+}
+else
+{printf(&quot;%c&quot;,s[i]);b = 1;a = 0;
+}
+}
+printf(&quot;\n&quot;);
+return 0;
+}
+</code></pre><p>资料：<code>#include &lt;string.h&gt;</code>：C语言里面关于字符数组的函数定义的头文件，常用函数有strlen、strcmp、strcpy等等。</p>
+<p>strlen所作的仅仅是一个计数器的工作，它从内存的某个位置(可以是字符串开头，中间某个位置，甚至是某个不确定的内存区域)开始扫描，直到碰到第一个字符串结束符’\0’为止，然后返回计数器值(长度不包含”\0”)。（主要是这个起作用）</p>
 
       
     </div>
@@ -125,10 +175,10 @@ with(document)0[
 
  <nav id="pagination" >
     
-    <a href="/2016/07/20/css命名/" class="alignleft prev" >Prev</a>
+    <a href="/2015/11/22/地图/" class="alignleft prev" >Prev</a>
     
     
-    <a href="/2015/12/17/书坊-一生/" class="alignright next" >Next</a>
+    <a href="/2015/11/20/C语言笔记-1/" class="alignright next" >Next</a>
     
     <div class="clearfix"></div>
 </nav>
@@ -139,7 +189,7 @@ with(document)0[
 
   
 <!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="2016/06/13/Start Hexo/" data-title="Star Hexo" data-url="http://shuang13.coding.me/2016/06/13/Start Hexo/"></div>
+  <div class="ds-thread" data-thread-key="2015/11/22/C语言笔记-2/" data-title="C语言 学习笔记(1)" data-url="http://shuang13.coding.me/2015/11/22/C语言笔记-2/"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">

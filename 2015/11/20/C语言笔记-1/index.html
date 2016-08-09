@@ -3,16 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Star Hexo | Dye Cream</title>
+  <title>C语言 学习笔记(1) | Dye Cream</title>
   <meta name="author" content="zbb">
   
-  <meta name="description" content="偶然的机会，了解到可以用github或者cording搭建博客，同时，我自己之前的博客，可能是服务器出了些问题，也导致我的博客一直无法登陆。于是，想到自己重建一个博客，托管在cording上，这下总不会出问题了吧。通过学习，用hexo搭建博客的教程的途中，依然出现了一些问题，不过一次失败，再全部删掉，重新再来一遍，利用已有的经验，第二次，就非常快速简单的成功了，心中非常高兴。主题我也摒弃繁杂华丽，改为简约大气风。管理起来，方便一些，看着也舒服。
-详细教程：http://opiece.me/2015/04/09/hexo-guide/">
+  <meta name="description" content="1.scan f的输入格式，空格、TAB和回车符都是无关紧要的，所以按En t er键并不意味着输入的结束。那如何才能告诉程序输入结束了呢？">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Star Hexo"/>
+  <meta property="og:title" content="C语言 学习笔记(1)"/>
   <meta property="og:site_name" content="Dye Cream"/>
 
   
@@ -55,20 +54,29 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-06-13T15:50:35.867Z"><a href="/2016/06/13/Start Hexo/">2016-06-13</a></time>
+        <time datetime="2015-11-20T09:26:36.000Z"><a href="/2015/11/20/C语言笔记-1/">2015-11-20</a></time>
       
       
   
-    <h1 class="title">Star Hexo</h1>
+    <h1 class="title">C语言 学习笔记(1)</h1>
   
 
     </header>
     <div class="entry">
       
         
-        <p>偶然的机会，了解到可以用github或者cording搭建博客，同时，我自己之前的博客，可能是服务器出了些问题，也导致我的博客一直无法登陆。于是，想到自己重建一个博客，托管在cording上，这下总不会出问题了吧。<br>通过学习，用hexo搭建博客的教程的途中，依然出现了一些问题，不过一次失败，再全部删掉，重新再来一遍，利用已有的经验，第二次，就非常快速简单的成功了，心中非常高兴。主题我也摒弃繁杂华丽，改为简约大气风。管理起来，方便一些，看着也舒服。</p>
-<p>详细教程：<a href="http://opiece.me/2015/04/09/hexo-guide/" target="_blank" rel="external">http://opiece.me/2015/04/09/hexo-guide/</a><br><a id="more"></a></p>
-<p>最后通过这个博客，希望把大学生活的一些有意义的东西记载下来，技术上的，文学上的，生活上的，都好好的保存在这个博客上，这比用那些奖状来证明自己真实、有意义得多。</p>
+        <p>1.scan f的输入格式，空格、TAB和回车符都是无关紧要的，<br>所以按En t er键并不意味着输入的结束。那如何才能告诉程序输入结束了呢？</p>
+<a id="more"></a>
+<p>在Windows下，输入完毕后先按Enter键，再按Ctrl＋Z键，最后再按Enter<br>键，即可结束输入。</p>
+<p>2.避免输入数据的时间影响测试结果，可使用一种称为“管道”的小技巧：在Win dows命令行下<br>执行ech o  20| abc，操作系统会自动把20输入，其中abc是程序名。</p>
+<p>3.使用文件最简单的方法是使用输入输出重定向，只需在m ain 函数的入口处加入以下两条<br>语句：<br>freopen(“input.txt”, “r”, stdin);<br>freopen(“output.txt”, “w”, stdout);<br>上述语句将使得scan f从文件in pu t .t x t读入，prin t f写入文件ou t pu t .t x t。事实上，不只是scan f<br>和prin t f，所有读键盘输入、写屏幕输出的函数都将改用文件。</p>
+<p>4.比较大的数组应尽量声明在main函数外，否则程序可能无法运行。</p>
+<p>5.如果要从数组a复制k个元素到数组b，可以这样做：m em cpy （b，a，siz eof（in t）<em>k ）。当然，如果数组a和b<br>都是浮点型的，复制时要写成“m em cpy （b，a，siz eof（dou ble）</em>k ）”。另外需要注意的是，<br>使用m em cpy 函数要包含头文件st rin g .h 。如果需要把数组a全部复制到数组b中，可以写得简单<br>一些：m em cpy （b，a，siz eof（a））。</p>
+<p>6.“m em set（a，0，siz eof（a））”的作用是把数组a清零，它也在st rin g .h 中定义。</p>
+<p>7.要输出\n用\n；同理其他也可以用\；</p>
+<p>输出%d用%%d;同理。。。</p>
+<p>8.保留小数%5.2f代表共5个长度，小数2两位</p>
+<p>9.逻辑运算符优先级：！最先；&amp;&amp;中；||低；</p>
 
       
     </div>
@@ -125,10 +133,10 @@ with(document)0[
 
  <nav id="pagination" >
     
-    <a href="/2016/07/20/css命名/" class="alignleft prev" >Prev</a>
+    <a href="/2015/11/22/C语言笔记-2/" class="alignleft prev" >Prev</a>
     
     
-    <a href="/2015/12/17/书坊-一生/" class="alignright next" >Next</a>
+    <a href="/2015/11/13/书坊-地狱/" class="alignright next" >Next</a>
     
     <div class="clearfix"></div>
 </nav>
@@ -139,7 +147,7 @@ with(document)0[
 
   
 <!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="2016/06/13/Start Hexo/" data-title="Star Hexo" data-url="http://shuang13.coding.me/2016/06/13/Start Hexo/"></div>
+  <div class="ds-thread" data-thread-key="2015/11/20/C语言笔记-1/" data-title="C语言 学习笔记(1)" data-url="http://shuang13.coding.me/2015/11/20/C语言笔记-1/"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">

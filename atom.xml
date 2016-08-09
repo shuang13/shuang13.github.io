@@ -1027,4 +1027,229 @@ background-color:yellow;
     
   </entry>
   
+  <entry>
+    <title>书坊 -《一生》</title>
+    <link href="http://shuang13.coding.me/2015/12/17/%E4%B9%A6%E5%9D%8A-%E4%B8%80%E7%94%9F/"/>
+    <id>http://shuang13.coding.me/2015/12/17/书坊-一生/</id>
+    <published>2015-12-17T05:41:00.000Z</published>
+    <updated>2016-08-09T03:12:19.782Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/mpic/s5643391.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;作者-莫泊桑&quot;&gt;&lt;a href=&quot;#作者-莫泊桑&quot; class=&quot;headerlink&quot; title=&quot;作者: 莫泊桑&quot;&gt;&lt;/a&gt;作者: 莫泊桑&lt;/h3&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;这本书我觉得最好的就是环境描写很好，其次通过描写一个贵族女子追求幸福而不可得的一生概括出了人们生活的一种基本状态：人生既不像我们想象的那么好，也不像我们想象的那么坏。女主人公开始渴望爱情，但得不到的才是最好的，得到之后，才知道背后的欺骗。这本书让我想起了路遥的《人生》，同样的悲情，不同的感觉。&lt;/p&gt;
+&lt;p&gt;其中这句话概括得很好：生活不可能像你想象得那么好，但也不会像你想象得那么糟。我觉得人的脆弱和坚强都超乎自己的想象。有时，我可能脆弱得一句话就泪流满面，有时，也发现自己咬着牙走了很长的路。&lt;/p&gt;
+&lt;p&gt;——莫泊桑&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/mpic/s5643391.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;作者-莫泊桑&quot;&gt;&lt;a href=&quot;#作者-莫泊桑&quot; class=&quot;headerlink&quot; title=&quot;作者: 莫泊桑&quot;&gt;&lt;/a&gt;作者: 莫泊桑&lt;/h3&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap 学习笔记(1)</title>
+    <link href="http://shuang13.coding.me/2015/12/14/%E4%B9%A6%E5%9D%8A-%E8%BF%BD%E9%A3%8E%E7%AD%9D%E7%9A%84%E4%BA%BA/"/>
+    <id>http://shuang13.coding.me/2015/12/14/书坊-追风筝的人/</id>
+    <published>2015-12-14T05:38:00.000Z</published>
+    <updated>2016-08-09T03:15:49.129Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/mpic/s1727290.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;作者-美-卡勒德·胡赛尼&quot;&gt;&lt;a href=&quot;#作者-美-卡勒德·胡赛尼&quot; class=&quot;headerlink&quot; title=&quot;作者: (美)卡勒德·胡赛尼&quot;&gt;&lt;/a&gt;作者: (美)卡勒德·胡赛尼&lt;/h3&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;这本书很好看，花了一个晚上一口气看完，从开始的讨厌文中主人公的懦弱，同情哈桑的命运，到为他们那种真挚的友情兄弟情而感动，文字中一会让人感到残酷，又一会让人感到温暖。真的要好好珍惜身边的每一个人，珍惜每一个对你好的人，珍惜那些美好的回忆，犹如那空中的风筝一般，尽管飞走，也要去追逐，去寻找。。。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/mpic/s1727290.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;作者-美-卡勒德·胡赛尼&quot;&gt;&lt;a href=&quot;#作者-美-卡勒德·胡赛尼&quot; class=&quot;headerlink&quot; title=&quot;作者: (美)卡勒德·胡赛尼&quot;&gt;&lt;/a&gt;作者: (美)卡勒德·胡赛尼&lt;/h3&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>谷歌地图</title>
+    <link href="http://shuang13.coding.me/2015/11/22/%E5%9C%B0%E5%9B%BE/"/>
+    <id>http://shuang13.coding.me/2015/11/22/地图/</id>
+    <published>2015-11-22T09:32:53.000Z</published>
+    <updated>2016-08-09T03:18:06.442Z</updated>
+    
+    <content type="html">&lt;iframe src=&quot;http://www.google.cn/maps/embed?pb=!1m14!1m12!1m3!1d29258579.03395647!2d132.61267425!3d26.468494469270723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-CN!2scn!4v1448184705889&quot; width=&quot;600&quot; height=&quot;450&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen&gt;&lt;/iframe&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;iframe src=&quot;http://www.google.cn/maps/embed?pb=!1m14!1m12!1m3!1d29258579.03395647!2d132.61267425!3d26.468494469270723!2m3!1f0!2f0!3f0!3m2!1
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C语言 学习笔记(1)</title>
+    <link href="http://shuang13.coding.me/2015/11/22/C%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0-2/"/>
+    <id>http://shuang13.coding.me/2015/11/22/C语言笔记-2/</id>
+    <published>2015-11-22T08:35:00.000Z</published>
+    <updated>2016-08-09T02:50:02.169Z</updated>
+    
+    <content type="html">&lt;p&gt;下面是道算法题：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;![2015-11-20_17-11-59.png][1]&lt;br&gt;我先用c++编写；&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream.h&amp;gt;
+void main()
+{
+    char i,j,a[200],ch=&amp;apos; &amp;apos;,t=0;
+    cin.getline(a,200);
+    for (i=0;a[i]!=&amp;apos;\0&amp;apos;;i++)
+    {if (a[i]==&amp;apos;W&amp;apos;&amp;amp;&amp;amp;a[i+1]==&amp;apos;U&amp;apos;&amp;amp;&amp;amp;a[i+2]==&amp;apos;B&amp;apos;)
+        {   a[i]=&amp;apos; &amp;apos;;
+            a[i+1]=a[i];
+            a[i+2]=a[i+1];//用空格替换掉，但就有三个空格了
+            delet(a,&amp;apos; &amp;apos;);//删除空格，这时所有字符连在一起
+            cout&amp;lt;&amp;lt;&amp;quot; &amp;quot;;//为了在删除点制造一个空格}
+        cout&amp;lt;&amp;lt;a[i];}
+cout&amp;lt;&amp;lt;a[0];
+
+}
+void delet(char a[],char ch)//删除指定字符
+{
+    int i,j;
+    for(i=j=0;a[i]!=&amp;apos;\0&amp;apos;;i++)
+    {
+        if(a[i]!=ch)
+            a[j++]=a[i];
+    }
+    a[j]=&amp;apos;\0&amp;apos;;    
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;但当为WUBWUBIWUBLOVEWUBYOU会变为  I LOVE YOU；&lt;/p&gt;
+&lt;p&gt;I前面会有空格，不符合题意；看来还是失败了TAT;&lt;/p&gt;
+&lt;p&gt;查了一个看起来简洁的答案&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;string.h&amp;gt;
+int main()
+{
+char s[200];
+int a, b, i, j, k;
+scanf(&amp;quot;%s&amp;quot;, s);
+k = strlen(s);
+a = 0;
+b = 0;
+for(i = 0; i &amp;lt; k; i++)
+{if(s[i]==&amp;apos;W&amp;apos;&amp;amp;&amp;amp;s[i+1]==&amp;apos;U&amp;apos;&amp;amp;&amp;amp;s[i+2]==&amp;apos;B&amp;apos;)
+{if(b != 0&amp;amp;&amp;amp;a!=1)
+printf(&amp;quot; &amp;quot;);i = i + 2;a = 1;
+}
+else
+{printf(&amp;quot;%c&amp;quot;,s[i]);b = 1;a = 0;
+}
+}
+printf(&amp;quot;\n&amp;quot;);
+return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;资料：&lt;code&gt;#include &amp;lt;string.h&amp;gt;&lt;/code&gt;：C语言里面关于字符数组的函数定义的头文件，常用函数有strlen、strcmp、strcpy等等。&lt;/p&gt;
+&lt;p&gt;strlen所作的仅仅是一个计数器的工作，它从内存的某个位置(可以是字符串开头，中间某个位置，甚至是某个不确定的内存区域)开始扫描，直到碰到第一个字符串结束符’\0’为止，然后返回计数器值(长度不包含”\0”)。（主要是这个起作用）&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;下面是道算法题：&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C语言 学习笔记(1)</title>
+    <link href="http://shuang13.coding.me/2015/11/20/C%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0-1/"/>
+    <id>http://shuang13.coding.me/2015/11/20/C语言笔记-1/</id>
+    <published>2015-11-20T09:26:36.000Z</published>
+    <updated>2016-08-09T02:44:32.578Z</updated>
+    
+    <content type="html">&lt;p&gt;1.scan f的输入格式，空格、TAB和回车符都是无关紧要的，&lt;br&gt;所以按En t er键并不意味着输入的结束。那如何才能告诉程序输入结束了呢？&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;在Windows下，输入完毕后先按Enter键，再按Ctrl＋Z键，最后再按Enter&lt;br&gt;键，即可结束输入。&lt;/p&gt;
+&lt;p&gt;2.避免输入数据的时间影响测试结果，可使用一种称为“管道”的小技巧：在Win dows命令行下&lt;br&gt;执行ech o  20| abc，操作系统会自动把20输入，其中abc是程序名。&lt;/p&gt;
+&lt;p&gt;3.使用文件最简单的方法是使用输入输出重定向，只需在m ain 函数的入口处加入以下两条&lt;br&gt;语句：&lt;br&gt;freopen(“input.txt”, “r”, stdin);&lt;br&gt;freopen(“output.txt”, “w”, stdout);&lt;br&gt;上述语句将使得scan f从文件in pu t .t x t读入，prin t f写入文件ou t pu t .t x t。事实上，不只是scan f&lt;br&gt;和prin t f，所有读键盘输入、写屏幕输出的函数都将改用文件。&lt;/p&gt;
+&lt;p&gt;4.比较大的数组应尽量声明在main函数外，否则程序可能无法运行。&lt;/p&gt;
+&lt;p&gt;5.如果要从数组a复制k个元素到数组b，可以这样做：m em cpy （b，a，siz eof（in t）&lt;em&gt;k ）。当然，如果数组a和b&lt;br&gt;都是浮点型的，复制时要写成“m em cpy （b，a，siz eof（dou ble）&lt;/em&gt;k ）”。另外需要注意的是，&lt;br&gt;使用m em cpy 函数要包含头文件st rin g .h 。如果需要把数组a全部复制到数组b中，可以写得简单&lt;br&gt;一些：m em cpy （b，a，siz eof（a））。&lt;/p&gt;
+&lt;p&gt;6.“m em set（a，0，siz eof（a））”的作用是把数组a清零，它也在st rin g .h 中定义。&lt;/p&gt;
+&lt;p&gt;7.要输出\n用\n；同理其他也可以用\；&lt;/p&gt;
+&lt;p&gt;输出%d用%%d;同理。。。&lt;/p&gt;
+&lt;p&gt;8.保留小数%5.2f代表共5个长度，小数2两位&lt;/p&gt;
+&lt;p&gt;9.逻辑运算符优先级：！最先；&amp;amp;&amp;amp;中；||低；&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.scan f的输入格式，空格、TAB和回车符都是无关紧要的，&lt;br&gt;所以按En t er键并不意味着输入的结束。那如何才能告诉程序输入结束了呢？&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>书坊 -《地狱》</title>
+    <link href="http://shuang13.coding.me/2015/11/13/%E4%B9%A6%E5%9D%8A-%E5%9C%B0%E7%8B%B1/"/>
+    <id>http://shuang13.coding.me/2015/11/13/书坊-地狱/</id>
+    <published>2015-11-13T05:02:00.000Z</published>
+    <updated>2016-08-09T03:07:02.885Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/mpic/s27173855.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;作者-美-丹·布朗&quot;&gt;&lt;a href=&quot;#作者-美-丹·布朗&quot; class=&quot;headerlink&quot; title=&quot;作者: (美)丹·布朗&quot;&gt;&lt;/a&gt;作者: (美)丹·布朗&lt;/h3&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;今天终于看完了丹布朗的《地狱》，一如既往的好看，其中精妙的骗局，优美的历史，关于但丁，关于《神曲》，关于人口问题，着实让我深深痴迷。让我对如今人类的人口问题，见识了一种我从没听过的解决方法，&lt;/p&gt;
+&lt;p&gt;就是研发出了一种让人不能生育的高传染性的病毒，但不是所有人都不能生育，而是只有三分之一的人会终生不育，并会随着DNA遗传下去，算种隐性遗传。就像黑死病一样，它的爆发促进了文艺复兴，人类一切问题皆可由人口问题而产生。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/mpic/s27173855.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;作者-美-丹·布朗&quot;&gt;&lt;a href=&quot;#作者-美-丹·布朗&quot; class=&quot;headerlink&quot; title=&quot;作者: (美)丹·布朗&quot;&gt;&lt;/a&gt;作者: (美)丹·布朗&lt;/h3&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>讲座 -花千芳</title>
+    <link href="http://shuang13.coding.me/2015/10/02/%E8%AE%B2%E5%BA%A7-%E8%8A%B1%E5%8D%83%E8%8A%B3/"/>
+    <id>http://shuang13.coding.me/2015/10/02/讲座-花千芳/</id>
+    <published>2015-10-02T15:03:53.000Z</published>
+    <updated>2016-08-09T03:30:39.482Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;strong&gt;第四十二期文峰青年大讲堂&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;–花千芳：畅游互联网与幸福的中国人!&lt;/p&gt;
+&lt;p&gt;时间：9月24日 晚上19:00&lt;/p&gt;
+&lt;p&gt;这是上大学听的第一次讲座，听到“花千芳”这个名字，第一反应是“花千骨”，然后就带着好奇去听。感觉收获真的挺大的。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;而且最令我激动的是他是《我们的征途是星辰大海》的作者；与《那些年哪些兔》有密切的关系，虽然一般人不知道这个动漫，可我知道这部动漫给国漫带来了多大的影响。&lt;/p&gt;
+&lt;p&gt;花千芳是农民出身，从贫穷的山村，通过互联网，传播正能量，进而实现自身价值获得成功。他的勤奋与坚持令人敬佩，给了我很大的感动。&lt;/p&gt;
+&lt;p&gt;花老师还给我们透露，如今有个重大机遇出现在我们面前，习主席提出的互联网+正在改变将来的社会形势，就如当初如马云等人抓住了互联网这机遇，看准了形势，如今获得了巨大成功。而如今中国极具缺乏计算机人才，如何将网络向多元化渗透，就看我们这一代如何去改变了。&lt;/p&gt;
+&lt;p&gt;人物资料&lt;/p&gt;
+&lt;p&gt;花千芳，辽宁省清原满族自治县人，1978年生，长期活跃在美言、天涯、铁血等著名论坛的草根农民网络作家，拥有大批粉丝。“花千芳”这个笔名，取中华的“华”的谐音，就是希望中华民族大家都好。&lt;/p&gt;
+&lt;p&gt;花千芳初中毕业后休学，以养鸡和种玉米等为生，13岁开始写作，2012年因15万字作品《我们的征途是星辰大海》一炮而红。曾任天涯国际观察版主，现为抚顺作家协会会员。&lt;/p&gt;
+&lt;p&gt;不过与众多网络作家不同的是，花千芳的写作以传递正能量、弘扬中国梦为主基调，被誉为“中国网络正能量四大写手之一”。[2] &lt;/p&gt;
+&lt;p&gt;2014年11月5日，“花千芳工作室”在清原县挂牌成立，县文联为花千芳专门配备了写作间，写作间电脑、办公桌椅等一应俱全。“花千芳工作室”将成为清原县广大业余作者、文学爱好者的培训基地，花千芳将不定期讲课、辅导。[3] &lt;/p&gt;
+&lt;p&gt;2014年11月6日，抚顺市作家协会八届四次理事会议表决通过了增补花千芳为抚顺市作家协会八届理事会理事，增选花千芳为抚顺市作家协会副主席。[1] &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://shuang13.coding.me/imgs/20150924_183706.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;第四十二期文峰青年大讲堂&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;–花千芳：畅游互联网与幸福的中国人!&lt;/p&gt;
+&lt;p&gt;时间：9月24日 晚上19:00&lt;/p&gt;
+&lt;p&gt;这是上大学听的第一次讲座，听到“花千芳”这个名字，第一反应是“花千骨”，然后就带着好奇去听。感觉收获真的挺大的。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
 </feed>
