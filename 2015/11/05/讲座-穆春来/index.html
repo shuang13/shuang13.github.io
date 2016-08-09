@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>讲座 -穆春来 | Dye Cream</title>
+  <meta name="author" content="zbb">
+  
+  <meta name="description" content="第十届研究生论坛–穆春来
+时间：11月4日 10：00
+这次听这个讲座，纯属意外，因为是研究生的论坛，而我却去凑了热闹。但没关系，又没人赶我出来。这次的穆教授是为在国内外数学方面非常厉害的专家，给我们讲了数学之美">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="讲座 -穆春来"/>
+  <meta property="og:site_name" content="Dye Cream"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="Dye Cream" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Dye Cream</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+  	<li> <a href="/atom.xml">RSS</a> </li>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="//about">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-11-05T15:03:53.000Z"><a href="/2015/11/05/讲座-穆春来/">2015-11-05</a></time>
+      
+      
+  
+    <h1 class="title">讲座 -穆春来</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        
+        <p><strong>第十届研究生论坛</strong>–穆春来</p>
+<p>时间：11月4日 10：00</p>
+<p>这次听这个讲座，纯属意外，因为是研究生的论坛，而我却去凑了热闹。但没关系，又没人赶我出来。这次的穆教授是为在国内外数学方面非常厉害的专家，给我们讲了数学之美</p>
+<a id="more"></a>
+<p>虽然有很多知识我已经知道了，但依然学到了很多东西，下面是我做的一些知识点笔记。</p>
+<p>1、斐波拉契数列的通项，今天知道了<br>通项公式的推导方法：利用特征方程</p>
+<p>线性递推数列的特征方程为：</p>
+<p>X^2=X+1</p>
+<p>解得</p>
+<p>X1=(1+√5)/2， X2=(1-√5)/2.</p>
+<p>斐波拉契数列则F(n)=C1<em>X1^n + C2</em>X2^n</p>
+<p>∵F(1)=F(2)=1</p>
+<p>∴C1<em>X1 + C2</em>X2</p>
+<p>C1<em>X1^2 + C2</em>X2^2</p>
+<p>解得C1=1/√5，C2=-1/√5</p>
+<p>∴F(n)=(1/√5)*{[(1+√5)/2]^n - [(1-√5)/2]^n}</p>
+<p>更多<a href="http://baike.sogou.com/v210745.htm" target="_blank" rel="external">http://baike.sogou.com/v210745.htm</a></p>
+<p> 2、对，可以用斐波那契画松果和向日葵 还有菠萝 花菜</p>
+<p> 3、还知道了足球上有多少个五边形</p>
+<pre><code>12个五边形 20个六边形
+</code></pre><p> 4、三维斜石塔</p>
+<p> 5、zn+1=zn+c</p>
+<p>曼德勃罗特集是人类有史以来做出的最奇异,最瑰丽的几何图形.曾被称为“上帝的指纹”。<br> 这个点集均出自公式:Zn+1=(Zn)^2+C,</p>
+<p> 6、洛伦茨曲线</p>
+<p>7、 混沌效应！</p>
+<p> 8、黄金比例</p>
+<p> 9、傅里叶定理</p>
+<p> 10、周期函数的形状，音色</p>
+<p> 11、r=a(1－sinΨ)<br>     心形线</p>
+<p> 12、亲和数对、朋友数、 相亲数</p>
+<p>例如220和284，1184和1210，2620和2924，5020和5564，6232和6368<br>人和人之间讲友情，有趣的是，数与数之间也有相类似的关系，数学家把一对存在特殊关系的数称为“亲和数”。常言道，知音难觅，寻找亲和数更使数学家绞尽了脑汁。亲和数是数论王国中的一朵小花，它有漫长的发现历史和美丽动人的传说（雅格礼单）。</p>
+<p>用计算机编出的c++程序</p>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+int divsum(int);
+const unsigned int INITNUM = 30000;
+int main()
+{
+int num_1,num_2;
+for (int num_1 = 1; num_1 &lt; INITNUM; ++num_1)
+{
+num_2 = divsum(num_1);
+if (num_1 != num_2)
+{
+if (num_1 == divsum(num_2))
+{
+cout&lt;&lt;num_1&lt;&lt;&quot; &quot;&lt;&lt;num_2&lt;&lt;endl;
+}
+}
+}
+}
+
+int divsum(int x)
+{
+int sum = 0;
+for( int i = 1 ; i &lt; x ; ++i )
+{
+if( x % i == 0 )
+{
+sum += i;
+}
+}
+return sum;
+}
+</code></pre><p> 14、神的爱 101% 多一度的热爱</p>
+<p> 态度度让你达成目标</p>
+<p> 神的爱让你超越目标 </p>
+<p>有些人说他们付出超过100%,可能吗？我们都曾经有过这种境遇，就是别人要求你去付出100%，甚至要求达到101%?生活中什么等于100%？</p>
+<p>这里有个小小的数学公式或许能帮助解答这些问题。</p>
+<p>如果26个英文字母 </p>
+<p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z </p>
+<p>按序代表下列相应数字</p>
+<p>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26</p>
+<p>那么 </p>
+<p>Knowledge（知识） K+N+O+W+L+E+D+G+E＝ 11+14+15+23+12+5+4+7+5=96%</p>
+<p>Workhard （努力工作） W+O+R+K+H+A+R+D ＝ 23+15+18+11+8+1+18+4 =98%</p>
+<p>也就是说知识和努力工作对我们人生的影响可以达到96％和98％</p>
+<p>Luck（好运） L+U+C+K＝12+21+3+11=47%</p>
+<p>Love（爱情） L+O+V+E＝12+15+22+5=54%</p>
+<p>是Money（金钱）吗? M+O+N+E+Y=13+15+14+5+25=72%<br>看来也不是</p>
+<p>是Leadership（领导能力）吗? L+E+A+D+E+R+S+H+I+P=12+5+1+4+5+18+19+9+16 =89%<br>还不是。</p>
+<p>ATTITUDE（态度） A+T+T+I+T+U+D+E＝1+20+20+9+20+21+4+5=100%</p>
+<p>那么看看”神的爱”能达到多少? LOVEOFGOD=12+15+22+5+15+6+7+15+4=101%</p>
+<p>因此，努力工作和知识能让我们接近目标，态度能让我们达成目标，唯有”神的爱”能让你超越颠峰。</p>
+<p><img src="http://shuang13.coding.me/imgs/2229219210.jpg" width="30%"></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+        <div class="bdsharebuttonbox">
+  <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+  <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+  <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+  <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+  <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+  <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+  <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+  <a href="#" class="bds_more" data-cmd="more"></a>
+  <a href="#" class="bds_count" data-cmd="count"></a>
+</div>
+<script>
+window._bd_share_config=
+{
+  "common":{
+    "bdSnsKey":{},
+    "bdText":"",
+    "bdMini":"2",
+    "bdMiniList":false,
+    "bdPic":"",
+    "bdStyle":"0",
+    "bdSize":"24"
+  },
+  "share":{},
+  "image":{
+    "viewList":["qzone","tsina","tqq","renren","weixin","fbook","twi"],
+    "viewText":"分享到：",
+    "viewSize":"24"
+  },
+  "selectShare":{
+    "bdContainerClass":null,
+    "bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","fbook","twi"]
+  }
+};
+with(document)0[
+  (getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)
+];
+</script>
+      
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    <a href="/2015/11/13/书坊-地狱/" class="alignleft prev" >Vorherige Seite</a>
+    
+    
+    <a href="/2015/10/23/讲座-谢毅钊/" class="alignright next" >Nächste Seite</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+  
+<!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="2015/11/05/讲座-穆春来/" data-title="讲座 -穆春来" data-url="http://shuang13.coding.me/2015/11/05/讲座-穆春来/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"shuang13"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="hidden" name="q" value="site:shuang13.coding.me">
+  </form>
+</div>
+
+  
+
+  
+
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本名：zbb</li>
+<li>QQ  ：794861654</li>
+<li>邮箱：794861654@qq.com</li>
+</ul>
+</div>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zbbwork.com/" title="zbb's Blog">追逐命运的溯流</a></li>
+</ul>
+</div>
+
+  <div class="widget tag">
+<h3 class="title">最新评论</h3>
+<div class="entry">
+<!-- 多说最新评论 start -->
+	<div class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+<!-- 多说最新评论 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"shuang13"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</div>
+</div>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 zbb
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:20px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+</body>
+</html>
